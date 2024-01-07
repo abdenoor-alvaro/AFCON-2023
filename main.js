@@ -2009,9 +2009,10 @@ function postHtml(...list) {
     `
     list[6].innerHTML += postHtml
 }
-
-
+console.log(currentPage === "/AFCON-2023/")
+console.log(currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/")
 if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
+    console.log("hello inside")
     let position = document.querySelector("#news-slider")
     let newsContainer = document.querySelector(".news-container")
     let seeAllBtn = document.querySelectorAll(".see-all-btn")
