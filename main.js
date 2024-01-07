@@ -2011,7 +2011,7 @@ function postHtml(...list) {
 }
 
 
-if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
     let position = document.querySelector("#news-slider")
     let newsContainer = document.querySelector(".news-container")
     let seeAllBtn = document.querySelectorAll(".see-all-btn")
@@ -2087,7 +2087,7 @@ let clickednews = document.querySelectorAll('.forNewsPage');
 let newsUrlParams = new URLSearchParams(window.location.search);
 let newsId = newsUrlParams.get('id');
 
-if (currentPage.includes("index.html") || currentPage.includes("all-news.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+if (currentPage.includes("index.html") || currentPage.includes("all-news.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
     clickednews.forEach(element => {
         element.addEventListener("click", () => window.location.href = `news-generate.html?id=${element.id}` );
     });
@@ -2511,7 +2511,7 @@ function gettingTheImportantDate(forScroll) {
     }
 }
 let fullDateForScroll = ""
-if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
     gettingTheImportantDate()
 }
 // End Games And Scores In Home Page
@@ -2887,7 +2887,7 @@ for (let n = 0; n < groups.length; n++) {
 let sortedGroups = [groupA, groupB, groupC, groupD, groupE, groupF]
 // End Sorting Group Teams
 // Start Group Stage Page
-if (currentPage.includes("group-stage.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+if (currentPage.includes("group-stage.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
     let groupNames = ["Group A", "Group B", "Group C", "Group D", "Group E", "Group F"]
     for (let n = 0; n < sortedGroups.length; n++) {
         let div = document.createElement("div")
@@ -3142,7 +3142,7 @@ function gameInfo(gameNumber, stage, final) {
 }
 // End Knockout Functions
 // Start Knockout Page
-if (currentPage.includes("knockout.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+if (currentPage.includes("knockout.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
     let finalHeader = `<h3>FINAL</h3>`
 
     let leftRoundOf16Upper = document.querySelector(".leftRoundOf16Upper")
@@ -3200,7 +3200,7 @@ function addTeam(...list) {
 }
 // End Teams Functions
 // Start Teams Page
-if (currentPage.includes("teams.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/mini_championnat_coup-u11/") {
+if (currentPage.includes("teams.html") || currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
     let teamsLocation = document.querySelector(".teamsJs")
     allTeams.forEach(team => {
         let teamName = team.name.split(" ")
