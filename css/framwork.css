@@ -1,0 +1,287 @@
+/* Start Variables */
+:root {
+    --blue-color: #0075ff;
+    --blue-alt-color: #0d69d5;
+    --orange-color: #f59e0b;
+    --green-color: #22c55e;
+    --red-color: #f44336;
+    --gray-color: #888;
+}
+/* End Variables */
+/* Start box */
+.d-block {
+    display: block;
+}
+.d-flex {
+    display: flex;
+}
+.flex-1 {
+    flex: 1;
+}
+.align-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.between-flex {
+    justify-content: space-between;
+}
+.gap-20 {
+    gap: 20px;
+}
+.d-grid {
+    display: grid;
+}
+/* End box */
+/* Start Padding and Margin */
+.p-10 {
+    padding: 10px;
+}
+.p-15 {
+    padding: 15;
+}
+.p-20 {
+    padding: 20px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pt-15 {
+    padding-top: 15px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pl-10 {
+    padding-left: 10px;
+}
+.pl-15 {
+    padding-left: 15px;
+}
+.pl-20 {
+    padding-left: 20px;
+}
+.m-auto {
+    margin: auto;
+}
+.m-15 {
+    margin: 15px;
+}
+.m-20 {
+    margin: 20px;
+}
+.mt-0 {
+    margin-top: 0;
+}
+.mt-5 {
+    margin-top: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.mr-15 {
+    margin-right: 15px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+/* End Padding and Margin */
+/* Start color */
+.bg-white {
+    background-color: white;
+}
+.bg-blue {
+    background-color: var(--blue-color);
+}
+.bg-gray {
+    background-color: var(--gray-color);
+}
+.bg-eee {
+    background-color: #eee;
+}
+.bg-red {
+    background-color: red;
+}
+.bg-green {
+    background-color: #22c55e;
+}
+.c-white {
+    color: white;
+}
+.c-black {
+    color: black;
+}
+.c-gray {
+    color: var(--gray-color);
+}
+.c-blue {
+    color: var(--blue-color);
+}
+.c-orange {
+    color: var(--orange-color);
+}
+.c-green {
+    color: var(--green-color);
+}
+.c-red {
+    color: var(--red-color);
+}
+/* End color */
+/* Start Position */
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+}
+/* End Position */
+/* Start font */
+.f-bold {
+    font-weight: bold;
+}
+.txt-c {
+    text-align: center;
+}
+.fs-13 {
+    font-size: 13px;
+}
+.fs-14 {
+    font-size: 14px;
+}
+.fs-15 {
+    font-size: 15px;
+}
+.fs-25 {
+    font-size: 25px;
+}
+/* End font */
+/* Start Border */
+.rad-6 {
+    border-radius: 6px;
+}
+.rad-10 {
+    border-radius: 10px;
+}
+.rad-half {
+    border-radius: 50%;
+}
+.border-ccc {
+    border: 1px solid #ccc;
+}
+.b-none {
+    border: none;
+}
+.o-none {
+    outline: none;
+}
+/* End Border */
+/* Start Width and Height */
+.w-full {
+    width: 100%;
+}
+.w-fit {
+    width: fit-content;
+}
+.h-fit {
+    height: fit-content;
+}
+.h-full {
+    height: 100%;
+}
+.w-100 {
+    width: 100px;
+}
+.h-100 {
+    height: 100px;
+}
+/* End Width and Height */
+/* Start Components  */
+.btn-shape {
+    padding: 4px 10px;
+    border-radius: 6px;
+}
+.center-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.between-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+/* End Components */
+/* Start Toggle Switch */
+.toggle-switch input {
+    -webkit-appearance: none;
+    appearance: none;
+}
+.toggle-switch > div {
+    width: 78px;
+    height: 32px;
+    background-color: ccc;
+    border-radius: 16px;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.toggle-switch > div:before {
+    font-family: var(--fa-style-family-classic);
+    content: "\f00d";
+    font-weight: 900;
+    border-radius: 50%;
+    background-color: white;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.toggle-switch input:checked +  div {
+    background-color: var(--blue-color);
+}
+.toggle-switch input:checked + div::before {
+    color: var(--blue-color);
+    content: "\f00c";
+    left: 50px;
+}
+/* End Toggle Switch */
