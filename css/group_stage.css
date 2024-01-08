@@ -1290,7 +1290,7 @@ body ::-webkit-scrollbar-thumb {
 /* Start team Profile */
 .header {
     padding-block: 50px;
-    background-image: url(/images/bg-orange-big.jpg); 
+    background-image: url("images/bg-orange-big.jpg"); 
 }
 .header .container {
     display: flex;
