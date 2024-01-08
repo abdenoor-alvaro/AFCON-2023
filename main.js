@@ -64,8 +64,8 @@ let pageHeaderHtml = `
             </label>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="games-and-scores.html">Games & Scores</a></li>
-                <li><a href="group-stage.html">Groups</a></li>
+                <li><a href="games-and-scores.html">Fixtures & Results</a></li>
+                <li><a href="group-stage.html">Standing</a></li>
                 <li><a href="knockout.html">Knockout</a></li>
                 <li><a href="all-news.html">News</a></li>
                 <li><a href="teams.html">Teams</a></li>
@@ -1931,7 +1931,7 @@ let newsData = {
         date: "15 Oct 2023",
         lan: "english",
         postId: "n1",
-        video: "TVV95Cw05og?si=Vl6BRuQVvy3K1I77"
+        // video: "TVV95Cw05og?si=Vl6BRuQVvy3K1I77"
     },
 }
 let news = Object.values(newsData)
