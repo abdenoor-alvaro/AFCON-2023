@@ -2009,8 +2009,6 @@ function postHtml(...list) {
     `
     list[6].innerHTML += postHtml
 }
-console.log(currentPage === "/AFCON-2023/")
-console.log(currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/")
 if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
     console.log("hello inside")
     let position = document.querySelector("#news-slider")
@@ -3255,6 +3253,7 @@ function teamHtml(...list) {
         <img src="" class="fullscreen-image"  alt="Fullscreen Image" id="fullscreen-image">
     </div>
     <div class="header">
+        <img src="images/bg-orange-big.jpg" alt="orang background">
         <div class="container" >
             <img src="images/${list[0]}" alt="" class="thumbnail" onclick="openImage('images/${list[0]}')">
             <p>${list[1]}</p>
