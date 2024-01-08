@@ -1,3 +1,12 @@
+
+
+let userTimezone = getUserTimezone();
+console.log(userTimezone);
+
+const currentPage = window.location.pathname;
+console.log(currentPage)
+
+const body = document.querySelector("body")
 // Start Global Functions
 
 function capitalize(sentence) {
@@ -43,13 +52,69 @@ function convertTime(gmtTime) {
     }
     return `${houreTime}:${minuteTime}`
 }
+
+let indicator = true
+function disableScrolling() {
+    if (indicator) {
+        body.style.overflow = "hidden"
+        indicator = false
+        return
+    }
+    indicator = true
+    body.style.overflow = "visible"
+}
+function openImage(imageSrc) {
+    const fullscreen = document.getElementById('fullscreen');
+    const fullscreenImage = document.getElementById('fullscreen-image');
+    fullscreenImage.src = imageSrc;
+    const selectedImage = new Image()
+    selectedImage.src = imageSrc
+    let widthDifference = screen.width - selectedImage.width
+    let heightDifference = screen.height - selectedImage.height
+
+    if (widthDifference < heightDifference) {
+        fullscreenImage.style.width = "90%"
+    } else {
+        fullscreenImage.style.height = "90%"
+        fullscreenImage.style.width = "unset"
+    }
+    body.style.overflow = "hidden"
+    fullscreen.style.display = 'block';
+}
+function closeFullscreen() {
+    const fullscreen = document.getElementById('fullscreen');
+    fullscreen.style.display = 'none';
+    body.style.overflow = "visible"
+}
+function openVideoFullscreen(id) {
+    const fullscreen = document.getElementById('fullscreenn');
+    fullscreen.style.display = 'block';
+    const videoIdOrUrl = id;
+
+    const iframe = document.getElementById('fullscreen-video');
+    if (videoIdOrUrl.includes('youtube.com')) {
+        const videoId = videoIdOrUrl.split('v=')[1];
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+    } else {
+        iframe.src = `https://www.youtube.com/embed/${videoIdOrUrl}`;
+    }
+}
+function openHighlightNTFullscreen() {
+    const fullscreenHighlightNT = document.getElementById('fullscreenHighlightNT');
+    fullscreenHighlightNT.style.display = 'block';
+}
+function closeFullscreenn() {
+    const fullscreen = document.getElementById('fullscreenn');
+    fullscreen.style.display = 'none';
+    const fullscreenHighlightNT = document.getElementById('fullscreenHighlightNT');
+    fullscreenHighlightNT.style.display = 'none';
+
+    // Pause the YouTube video by resetting the iframe source
+    const iframe = document.getElementById('fullscreen-video');
+    iframe.src = '';
+}
 // End Global Functions
 // Example usage
-let userTimezone = getUserTimezone();
-console.log(userTimezone);
-
-const currentPage = window.location.pathname;
-console.log(currentPage)
 // Start page Header
 let pageHeaderHtml = `
     <!-- Start Header -->
@@ -89,37 +154,37 @@ let allTeams = [
         name: "ivory coast",
         subName: "CIV",
         flagPic: "Flag-Cote-dIvoire.webp",
-        players: {
-            p1: {
-                fName: "Santana",
-                lName: "EDERSON",
-                position: "GOALKEEPER",
-                photo: "ederson.webp",
-                city: "SI hawes",
-                age: "52yo",
-                height: "178cm",
-                proClub: "without club"
-            },
-            p2: {
-                fName: "Ruben",
-                lName: "DIAS",
-                position: "DEFENDER",
-                photo: "ruben-dias.webp",
-                city: "SI hawes",
-                age: "52yo",
-                height: "178cm",
-                proClub: "without club"
-            },
-            p3: {
-                fName: "Kyle",
-                lName: "WALKER",
-                position: "DEFENDER",
-                photo: "kyle-walker.webp",
-                city: "SI hawes",
-                age: "52yo",
-                height: "178cm",
-                proClub: "without club"
-            },
+        // players: {
+        //     p1: {
+        //         fName: "Santana",
+        //         lName: "EDERSON",
+        //         position: "GOALKEEPER",
+        //         photo: "ederson.webp",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p2: {
+        //         fName: "Ruben",
+        //         lName: "DIAS",
+        //         position: "DEFENDER",
+        //         photo: "ruben-dias.webp",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
+        //     p3: {
+        //         fName: "Kyle",
+        //         lName: "WALKER",
+        //         position: "DEFENDER",
+        //         photo: "kyle-walker.webp",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     },
             // p4: {
             //     fName: "Kevin",
             //     lName: "DE BRUYNE",
@@ -160,17 +225,17 @@ let allTeams = [
             //     height: "178cm",
             //     proClub: "without club"
             // },
-            manager: {
-                fName: "Pep",
-                lName: "GUARDIOLA",
-                position: "MANAGER",
-                photo: "ma.png",
-                city: "SI hawes",
-                age: "52yo",
-                height: "178cm",
-                proClub: "without club"
-            }
-        }
+        //     manager: {
+        //         fName: "Pep",
+        //         lName: "GUARDIOLA",
+        //         position: "MANAGER",
+        //         photo: "ma.png",
+        //         city: "SI hawes",
+        //         age: "52yo",
+        //         height: "178cm",
+        //         proClub: "without club"
+        //     }
+        // }
     },{
         name: "morocco",
         subName: "MAR",
@@ -1912,7 +1977,82 @@ let groupF = ["morocco", "dr congo", "zambia", "tanzania"]
 
 // Start Latest News Data
 let newsData = {
-    news9: {
+    news2: {
+        img: "news2.webp",
+        header: "Final Squad Lists for AFCON 2023 ",
+        description: `
+        <style>
+        .n2 a{
+            color: #189e4b;
+        }
+        </style>
+        With seven days to kick-off of Africa's biggest event, the  TotalEnergies CAF Africa Cup of Nations Cote d'Ivoire 2023, CAF today released the final squad list for the 24 qualified teams.
+        <br>
+The opening match of the TotalEnergies CAF Africa Cup of Nations Cote d'Ivoire 2023 will be played in Abidjan on 13 January 2023.
+<br>
+In line with the new Regulations, each Participating Member Association ("PMA") is permitted to submit a final squad of up to 27 players; with only 23 available for selection for each match during the Tournament.
+<br>
+A player in the final squad can only be replaced after a serious injury no less than 24 hours before the team’s first match.
+<br>
+Click <b>BELOW</b> for the TotalEnergies CAF AFCON squads.
+<br>
+<br>
+
+<a href="https://www.cafonline.com/media/0qva0o20/angola.pdf" target="_blank" >Angola</a>
+<br>
+<a href="https://www.cafonline.com/media/sanb2r2g/algeria.pdf" target="_blank" >Algeria</a>
+<br>
+<a href="https://www.cafonline.com/media/213c0wwp/burkina-faso.pdf" target="_blank" >Burkina Faso</a>
+<br>
+<a href="https://www.cafonline.com/media/tdcd0g0y/cameroon.pdf" target="_blank" >Cameroon</a>
+<br>
+<a href="https://www.cafonline.com/media/dzmc1iov/cap-vert.pdf" target="_blank" >Cape Verde</a>
+<br>
+<a href="https://www.cafonline.com/media/3dtf23jl/congo-dr.pdf" target="_blank" >DR Congo</a>
+<br>
+<a href="https://www.cafonline.com/media/ow2obxrw/c%C3%B4te-divoire.pdf" target="_blank" >Cote d'Ivoire</a>
+<br>
+<a href="https://www.cafonline.com/media/derfauez/eq-guinea.pdf" target="_blank" >Eq Guinea</a>
+<br>
+<a href="https://www.cafonline.com/media/d2ub1hek/gambia.pdf" target="_blank" >Gambia</a>
+<br>
+<a href="https://www.cafonline.com/media/0s5e3tiy/egypt.pdf" target="_blank" >Egypt</a>
+<br>
+<a href="https://www.cafonline.com/media/nwzj0ybn/ghana.pdf" target="_blank" >Ghana</a>
+<br>
+<a href="https://www.cafonline.com/media/ptwhwwt0/guinea-bissau.pdf" target="_blank" >Guinea Bissau</a>
+<br>
+<a href="https://www.cafonline.com/media/kxtbufgs/guinea.pdf" target="_blank" >Guinea</a>
+<br>
+<a href="https://www.cafonline.com/media/5uln1hek/mali.pdf" target="_blank" >Mali</a>
+<br>
+<a href="https://www.cafonline.com/media/12bbys2g/maroc.pdf" target="_blank" >Morocco</a>
+<br>
+<a href="https://www.cafonline.com/media/3sfnq3az/mauritania.pdf" target="_blank" >Mauritania</a>
+<br>
+<a href="https://www.cafonline.com/media/q2fbupse/mozambique.pdf" target="_blank" >Mozambique</a>
+<br>
+<a href="https://www.cafonline.com/media/e0zbjymc/namibia.pdf" target="_blank" >Namibia</a>
+<br>
+<a href="https://www.cafonline.com/media/4diducuu/nigeria.pdf" target="_blank" >Nigeria</a>
+<br>
+<a href="https://www.cafonline.com/media/xizpgqe1/senegal.pdf" target="_blank" >Senegal</a>
+<br>
+<a href="https://www.cafonline.com/media/fjmhqgv2/south-africa.pdf" target="_blank" >South Africa</a>
+<br>
+<a href="https://cafonline.com/media/1uqpjqua/tanzania.pdf" target="_blank" >Tanzania</a>
+<br>
+<a href="https://www.cafonline.com/media/t54he35q/tunisie.pdf" target="_blank" >Tunisia</a>
+<br>
+<a href="https://www.cafonline.com/media/vtggqnwq/zambia.pdf" target="_blank" >Zambia</a>
+<br>
+`,
+        date: "06 Jan 2024",
+        lan: "english",
+        postId: "n2",
+        // video: "TVV95Cw05og?si=Vl6BRuQVvy3K1I77"
+    },
+    news1: {
         img: "news1.jpeg",
         header: "AFCON 2023 | FINAL DRAW",
         description: `<b>Groups:</b>
@@ -1928,7 +2068,7 @@ let newsData = {
 <b>Group E:</b> Tunisia, Mali, South Africa, Namibia
 <br>
 <b>Group F:</b> Morocco, DR Congo, Zambia, Tanzania`,
-        date: "15 Oct 2023",
+        date: "12 Oct 2023",
         lan: "english",
         postId: "n1",
         // video: "TVV95Cw05og?si=Vl6BRuQVvy3K1I77"
@@ -2010,7 +2150,6 @@ function postHtml(...list) {
     list[6].innerHTML += postHtml
 }
 if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
-    console.log("hello inside")
     let position = document.querySelector("#news-slider")
     let newsContainer = document.querySelector(".news-container")
     let seeAllBtn = document.querySelectorAll(".see-all-btn")
@@ -2066,7 +2205,7 @@ function newsGenerateHtml(...list) {
             <div class="image">
                 ${list[5]}
             </div>
-            <div class="news ${list[4]}">
+            <div class="news ${list[4]} ${list[6]}">
             ${list[2]}
             </div>
             <div class="fullscreen" id="fullscreen">
@@ -2099,7 +2238,7 @@ for (let i = 0; i < news.length; i++) {
         newsMedia = `<iframe width="560" height="315" src="https://www.youtube.com/embed/${post[6]}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
     }
     if (newsId === post[5]) {
-        let list = [post[0], post[1], post[2], post[3], post[4], newsMedia]
+        let list = [post[0], post[1], post[2], post[3], post[4], newsMedia, post[5]]
         newsGenerateHtml(...list)
     }
 }
@@ -3216,18 +3355,8 @@ if (currentPage.includes("teams.html") || currentPage.includes("index.html") || 
 
 
 
-// Start Teams Profiles 
+// Start Teams Profiles
 // Start Teams Profiles Functions
-function openImage(imageSrc) {
-    const fullscreen = document.getElementById('fullscreen');
-    const fullscreenImage = document.getElementById('fullscreen-image');
-    fullscreenImage.src = imageSrc;
-    fullscreen.style.display = 'block';
-}
-function closeFullscreen() {
-    const fullscreen = document.getElementById('fullscreen');
-    fullscreen.style.display = 'none';
-}
 
 function redirectToTeamPage(teamId) {
     window.location.href = `team-profile-generate.html?id=${teamId}`;
@@ -3543,33 +3672,7 @@ if (currentPage.includes("team-profile-generate.html")) {
 
 // Start Game Profiles
 // Start Game Profiles Functions
-function openVideoFullscreen(id) {
-    const fullscreen = document.getElementById('fullscreenn');
-    fullscreen.style.display = 'block';
-    const videoIdOrUrl = id;
 
-    const iframe = document.getElementById('fullscreen-video');
-    if (videoIdOrUrl.includes('youtube.com')) {
-        const videoId = videoIdOrUrl.split('v=')[1];
-        iframe.src = `https://www.youtube.com/embed/${videoId}`;
-    } else {
-        iframe.src = `https://www.youtube.com/embed/${videoIdOrUrl}`;
-    }
-}
-function openHighlightNTFullscreen() {
-    const fullscreenHighlightNT = document.getElementById('fullscreenHighlightNT');
-    fullscreenHighlightNT.style.display = 'block';
-}
-function closeFullscreenn() {
-    const fullscreen = document.getElementById('fullscreenn');
-    fullscreen.style.display = 'none';
-    const fullscreenHighlightNT = document.getElementById('fullscreenHighlightNT');
-    fullscreenHighlightNT.style.display = 'none';
-
-    // Pause the YouTube video by resetting the iframe source
-    const iframe = document.getElementById('fullscreen-video');
-    iframe.src = '';
-}
 
 
 function gameProfileHtml(leftTeamGoals, rightTeamGoals, ...list) {
