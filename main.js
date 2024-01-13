@@ -2444,137 +2444,28 @@ function createDay(day, today, specialTeam) {
 // End Games & Scores Functions
 
 // Start Games And Scores In Home Page
-var date = new Date()
-let dayName = date.getDay() + 1
-let dayNumber = date.getDate()
-let month = date.getMonth() + 1
-let year = date.getFullYear()
-let beginDay = "Saturday 13 January 2024"
-let splitedBeginDay = beginDay.split(" ")
-
-let montht = splitedBeginDay[2]
-switch (montht) {
-    case "January":
-        montht = 1;
-        break
-    case "February":
-        montht = 2;
-        break
-    case "March":
-        montht = 3;
-        break
-    case "April":
-        montht = 4;
-        break
-    case "May":
-        montht = 5;
-        break
-    case "June":
-        montht = 6;
-        break
-    case "July":
-        montht = 7;
-        break
-    case "August":
-        montht = 8;
-        break
-    case "September":
-        montht = 9;
-        break
-    case "October":
-        montht = 10;
-        break
-    case "November":
-        montht = 11;
-        break
-    case "December":
-        montht = 12;
-        break
-}
-let daysNum = year * 364 + month * 30 + dayNumber
-let daysNumBeginDay = parseInt(splitedBeginDay[3])* 364 + montht * 30 + parseInt(splitedBeginDay[1])
-// console.log((daysNumBeginDay - year/4) - (daysNum - year/4))
-
-// console.log(daysNum - year/4)
-
-
-let sundayNum = 1
-let sundayTest = 0
-let mondayNum = 2 
-let mondayTest = 0
-let tuesdayNum = 3
-let tuesdayTest = 0
-let wednesdayNum = 4
-let wednesdayTest = 0
-let thursdayNum = 5
-let thursdayTest = 0
-let fridayNum = 6
-let fridayTest = 0
-let saturdayNum = 7
-let saturdayTest = 0
 function dateConventer(dayName, dayNumber, month, year) {
-    if (dayName === sundayNum || dayName === -6) {
-        if (dayName === -6 && sundayTest === 0) {
-            sundayNum -= 14
-        } else {
-            sundayNum -= 7
-        }
-        dayName = "Sunday"
-        sundayTest += 1
-    }
-    if (dayName === mondayNum || dayName === -5) {
-        if (dayName === -5 && mondayTest === 0) {
-            mondayNum -= 14
-        } else {
-            mondayNum -= 7
-        }
-        dayName = "Monday"
-        mondayTest += 1
-    }
-    if (dayName === tuesdayNum || dayName === -4) {
-        if (dayName === -4 && tuesdayTest === 0) {
-            tuesdayNum -= 14
-        } else {
-            tuesdayNum -= 7
-        }
-        dayName = "Tuesday"
-        tuesdayTest += 1
-    }
-    if (dayName === wednesdayNum || dayName === -3) {
-        if (dayName === -3 && wednesdayTest === 0) {
-            wednesdayNum -= 14
-        } else {
-            wednesdayNum -= 7
-        }
-        dayName = "Wednesday"
-        wednesdayTest += 1
-    }
-    if (dayName === thursdayNum || dayName === -2) {
-        if (dayName === -2 && thursdayTest === 0) {
-            thursdayNum -= 14
-        } else {
-            thursdayNum -= 7
-        }
-        dayName = "Thursday"
-        thursdayTest += 1
-    }
-    if (dayName === fridayNum || dayName === -1) {
-        if (dayName === -1 && fridayTest === 0) {
-            fridayNum -= 14
-        } else {
-            fridayNum -= 7
-        }
-        dayName = "Friday"
-        fridayTest += 1
-    }
-    if (dayName === saturdayNum || dayName === 0) {
-        if (dayName === 0 && saturdayTest === 0) {
-            saturdayNum -= 14
-        } else {
-            saturdayNum -= 7
-        }
-        dayName = "Saturday"
-        saturdayTest += 1
+    switch (dayName) {
+        case 0:
+            dayName = "Sunday"
+            break
+        case 1:
+            dayName = "Monday"
+            break
+        case 2:
+            dayName = "Tuesday"
+            break
+        case 3:
+            dayName = "Wednesday"
+            break
+        case 4:
+            dayName = "Thursday"
+            break
+        case 5:
+            dayName = "Friday"
+            break
+        case 6: 
+            dayName = "Saturday"
     }
     switch (month) {
         case 1:
@@ -2614,84 +2505,64 @@ function dateConventer(dayName, dayNumber, month, year) {
             month = "December";
             break
     }
+
     let fullDate = `${dayName} ${dayNumber} ${month} ${year}`
-    // console.log(fullDate)
     let dateNumber = fullDate.split(" ")[1]
     if (dateNumber.length < 2) {
         fullDate = `${dayName} 0${dayNumber} ${month} ${year}`
     }
-    
-    
     return fullDate
 }
-function creatDayInHomePage(fullDate, forScrollingToDate) {
-    let num = 0
-    for (let j = 0; j < dayss.length; j++) {
-        let day = Object.values(dayss[j])
-        if (day[0] === fullDate) {
-            if (forScrollingToDate === undefined) {
-                if (dayss[j - 1] !== undefined) {
-                    let day = Object.values(dayss[j - 1])
-                    createDay(day, day[0])
-                }
-                
-                fullDate = dateConventer(dayName, dayNumber, month, year)
-                day = Object.values(dayss[j])
-                if (day[0] === fullDate) {
-                    createDay(day, "Today")
-                } else {
-                    createDay(day, day[0])
-                }
 
-                // if (dayss[j + 1] !== undefined) {
-                //     let day = Object.values(dayss[j + 1])
-                //     createDay(day, day[0])
-                // }
-            }
-            num += 1
-        }
-    }
-    return num
-}
-function gettingTheImportantDate(forScroll) {
-    let fullDate = dateConventer(dayName , dayNumber, month, year) 
-    let returnedNum = creatDayInHomePage(fullDate)
-    let monthChangingNum = dayNumber
-    let monthsWith31 = [1, 3, 5, 7, 8, 10, 12]
-    let monthsWith28 = [2]
-    for (let i = 1; i < 100; i++) {
-        if (monthChangingNum === 1) {
-            month = month - 1
-            if (monthsWith31.includes(month)) {
-                dayNumber += 31
-                monthChangingNum += 31
-            } else if (monthsWith28.includes(month)) {
-                dayNumber += 28
-                monthChangingNum += 28
-            } else {
-                dayNumber += 30
-                monthChangingNum += 30
-            }
-        }
-        monthChangingNum -= 1
-        if (returnedNum === 0) {
-            fullDate = dateConventer(dayName - i, dayNumber - i, month, year)
-            fullDateForScroll = fullDate
-            returnedNum = creatDayInHomePage(fullDate, forScroll)
-        }
-        if (returnedNum > 0) {
-            break
-        }
-    }
+var date = new Date()
+let dayName = date.getDay()
+let dayNumber = date.getDate() 
+let month = date.getMonth() + 1
+let year = date.getFullYear()
+fullDate = dateConventer(dayName, dayNumber, month, year)
 
-    if (returnedNum === 0 && forScroll === undefined) {
-        createDay(Object.values(dayss[0]), Object.values(dayss[0])[0])
-        createDay(Object.values(dayss[1]), Object.values(dayss[1])[0])
-    }
-}
 let fullDateForScroll = ""
-if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
-    gettingTheImportantDate()
+let num = 0
+for (let j = 0; j < dayss.length; j++) {
+    let day = Object.values(dayss[j])
+    if (day[0] === fullDate) {
+        fullDateForScroll = day[0]
+        if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
+            if (dayss[j - 1] !== undefined) {
+                let day = Object.values(dayss[j - 1])
+                createDay(day, `${day[0]} (Yesterday)`)
+            }
+            createDay(day, `${day[0]} (Today)`)
+        }
+        num += 1
+    } 
+}
+if (num === 0) {
+    if (new Date(fullDate) < new Date(dayss[0].date)) {
+        fullDateForScroll = Object.values(dayss[0])[0]
+        if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
+            createDay(Object.values(dayss[0]), Object.values(dayss[0])[0])
+            createDay(Object.values(dayss[1]), Object.values(dayss[1])[0])            
+        }
+    } else if (new Date(fullDate) > new Date(dayss[dayss.length - 1].date)) {
+        fullDateForScroll = Object.values(dayss[dayss.length - 2])[0]
+        if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
+            createDay(Object.values(dayss[dayss.length -2]), Object.values(dayss[dayss.length -2])[0])
+            createDay(Object.values(dayss[dayss.length -1]), Object.values(dayss[dayss.length -1])[0])            
+        }
+    } else {
+        for (let j = 0; j < dayss.length; j++) {
+            let day = Object.values(dayss[j])
+            if (new Date(day[0]) > new Date(fullDate)) {
+                fullDateForScroll = Object.values(dayss[j - 2])[0]
+                if (currentPage.includes("index.html") || currentPage === "/" || currentPage === "/AFCON-2023/") {
+                    createDay(Object.values(dayss[j - 2]), Object.values(dayss[j - 2])[0])
+                    createDay(Object.values(dayss[j - 1]), Object.values(dayss[j - 1])[0])
+                }
+                break
+            } 
+        }
+    }
 }
 // End Games And Scores In Home Page
 
@@ -2703,8 +2574,6 @@ function getElementPosition(element) {
         return rect.top + scrollTop
 }
 if (currentPage.includes("games-and-scores.html")) {
-    gettingTheImportantDate(false)
-
     let position = 0
     for (let j = 0; j < dayss.length; j++) {
         let day = Object.values(dayss[j])
@@ -2715,12 +2584,12 @@ if (currentPage.includes("games-and-scores.html")) {
     let fixed = document.querySelector(".fixed")
     for (let i = 0; i < special.length; i++) {
         if (special[i].innerText === fullDateForScroll) {
-
             position = getElementPosition(special[i]) - 130;
 
             if (i !== 0) {
                 window.scrollTo({ top: position, behavior: "auto" });
             }
+            break
         } 
     }
     window.onscroll = function () {
