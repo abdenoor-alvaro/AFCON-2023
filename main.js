@@ -146,6 +146,47 @@ if (!currentPage.includes("games-and-scores.html")) {
     pageBody.prepend(pageHeader)
 }
 // End page Header
+// Start Page Footer
+let pageFooterHtml = `
+        <div class="footer">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+            <div class="container footer-content">
+                <div class="left-side">
+                    <a href="index.html" class="logo">
+                        <img src="images/AFCON_Logo_Port_OnDark_RGB_FR-897x1024.png" alt="">
+
+                    </a>
+                    <div class="contact-us-btn"><span>Need The Developer?</span><a href="https://www.facebook.com/abdenoor.alvaro" target="_blank">CONTACT US</a></div> 
+                </div>
+                <div class="right-side">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="games-and-scores.html">Fixtures & Results</a></li>
+                        <li><a href="group-stage.html">Standing</a></li>
+                        <li><a href="knockout.html">Knockout</a></li>
+                        <li><a href="all-news.html">News</a></li>
+                        <li><a href="teams.html">Teams</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="bottom-footer">Made With <i class="fa-solid fa-heart" style="color: #ff0000;"></i> By Alvaro</p>
+        </div>
+`
+let pageFooter = document.querySelector("footer")
+if (!currentPage.includes("index.html")) {
+    pageFooter.innerHTML = pageFooterHtml
+
+    if (currentPage.includes("games-and-scores.html") || currentPage.includes("knockout.html")) {
+        document.querySelector(".shape-fill").style.fill = "#f1f0d8"
+    } else if (currentPage.includes("all-news.html")) {
+        document.querySelector(".shape-fill").style.fill = "#020f2a"
+    } else if (currentPage.includes("game-generate.html")) {
+        document.querySelector(".shape-fill").style.fill = "white"
+    }
+}
+// End Page Footer
 
 
 // Start Teams Data 
@@ -327,101 +368,101 @@ let allTeams = [
         subName: "ALG",
         flagPic: "Flag_of_Algeria.svg",
         players: {
-            p1: {
-                fName: "moustafa",
-                lName: "ZEGHBA",
-                position: "GOALKEEPER",
-                photo: "zaghba-removebg-preview.png",
-                age: "33",
-                height: "1.90",
-                proClub: "Damac F.C",
-                proClubCountry: "Saudi Arabia"
-            },
-            p2: {
-                fName: "Anthony Louis",
-                lName: "Mandrea",
-                position: "GOALKEEPER",
-                photo: "zaghba-removebg-preview.png",
-                age: "27",
-                height: "1.86",
-                proClub: "S.M. Caen",
-                proClubCountry: "France"
-            },
-            p3: {
-                fName: "MBOLHI ",
-                lName: "RAIS",
-                position: "GOALKEEPER",
-                photo: "zaghba-removebg-preview.png",
-                age: "37",
-                height: "1.88",
-                proClub: "CR Belouizdad",
-                proClubCountry: "algeria"
-            },
-            p4: {
-                fName: "Oussama",
-                lName: "Benbot",
-                position: "GOALKEEPER",
-                photo: "zaghba-removebg-preview.png",
-                age: "29",
-                height: "1.88",
-                proClub: "USM Alger",
-                proClubCountry: "algeria"
-            },
-            p5: {
-                fName: "Aïssa",
-                lName: "Mandi",
-                position: "DEFENDER",
-                photo: "zaghba-removebg-preview.png",
-                age: "32",
-                height: "1.84",
-                proClub: "Villarreal",
-                proClubCountry: "spain"
-            },
-            p6: {
-                fName: "Kevin Daniel",
-                lName: "Guitoun",
-                position: "DEFENDER",
-                photo: "zaghba-removebg-preview.png",
-                age: "27",
-                height: "1.90",
-                proClub: "Metz",
-                proClubCountry: "France"
-            },
-            p7: {
-                fName: "Mohamed Amine",
-                lName: "Tougai",
-                position: "DEFENDER",
-                photo: "zaghba-removebg-preview.png",
-                age: "23",
-                height: "1.91",
-                proClub: "Espérance de Tunis",
-                proClubCountry: "tunisia"
-            },
-            p8: {
-                fName: "Ahmed",
-                lName: "Touba",
-                position: "DEFENDER",
-                photo: "zaghba-removebg-preview.png",
-                age: "25",
-                height: "1.84",
-                proClub: "Lecce",
-                proClubCountry: "italy"
-            },
-            p9: {
-                fName: "RAYAN",
-                lName: "AIT NOURI",
-                position: "DEFENDER",
-                photo: "zaghba-removebg-preview.png",
-                age: "22",
-                height: "1.80",
-                proClub: "Wolverhampton Wanderers",
-                proClubCountry: "england"
-            },
+            // p1: {
+            //     fName: "moustafa",
+            //     lName: "ZEGHBA",
+            //     position: "GOALKEEPER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "33",
+            //     height: "1.90",
+            //     proClub: "Damac F.C",
+            //     proClubCountry: "Saudi Arabia"
+            // },
+            // p2: {
+            //     fName: "Anthony Louis",
+            //     lName: "Mandrea",
+            //     position: "GOALKEEPER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "27",
+            //     height: "1.86",
+            //     proClub: "S.M. Caen",
+            //     proClubCountry: "France"
+            // },
+            // p3: {
+            //     fName: "MBOLHI ",
+            //     lName: "RAIS",
+            //     position: "GOALKEEPER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "37",
+            //     height: "1.88",
+            //     proClub: "CR Belouizdad",
+            //     proClubCountry: "algeria"
+            // },
+            // p4: {
+            //     fName: "Oussama",
+            //     lName: "Benbot",
+            //     position: "GOALKEEPER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "29",
+            //     height: "1.88",
+            //     proClub: "USM Alger",
+            //     proClubCountry: "algeria"
+            // },
+            // p5: {
+            //     fName: "Aïssa",
+            //     lName: "Mandi",
+            //     position: "DEFENDER",
+            //     photo: "mandi.png",
+            //     age: "32",
+            //     height: "1.84",
+            //     proClub: "Villarreal",
+            //     proClubCountry: "spain"
+            // },
+            // p6: {
+            //     fName: "Kevin Daniel",
+            //     lName: "Guitoun",
+            //     position: "DEFENDER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "27",
+            //     height: "1.90",
+            //     proClub: "Metz",
+            //     proClubCountry: "France"
+            // },
+            // p7: {
+            //     fName: "Mohamed Amine",
+            //     lName: "Tougai",
+            //     position: "DEFENDER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "23",
+            //     height: "1.91",
+            //     proClub: "Espérance de Tunis",
+            //     proClubCountry: "tunisia"
+            // },
+            // p8: {
+            //     fName: "Ahmed",
+            //     lName: "Touba",
+            //     position: "DEFENDER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "25",
+            //     height: "1.84",
+            //     proClub: "Lecce",
+            //     proClubCountry: "italy"
+            // },
+            // p9: {
+            //     fName: "RAYAN",
+            //     lName: "AIT NOURI",
+            //     position: "DEFENDER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "22",
+            //     height: "1.80",
+            //     proClub: "Wolverhampton Wanderers",
+            //     proClubCountry: "england"
+            // },
             p10: {
-                fName: "ucef",
+                fName: "youcef",
                 lName: "Atal",
                 position: "DEFENDER",
-                photo: "zaghba-removebg-preview.png",
+                photo: "atal.jpg",
                 age: "27",
                 height: "1.76",
                 proClub: "O.G.C Nice",
@@ -431,37 +472,37 @@ let allTeams = [
                 fName: "Ramy",
                 lName: "Bensebaïni",
                 position: "DEFENDER",
-                photo: "zaghba-removebg-preview.png",
+                photo: "bensabini.jpg",
                 age: "28",
                 height: "1.87",
                 proClub: "Borussia Dortmund",
                 proClubCountry: "germany"
             },
-            p12: {
-                fName: "Zineddine",
-                lName: "Belaïd",
-                position: "DEFENDER",
-                photo: "zaghba-removebg-preview.png",
-                age: "24",
-                height: "1.87",
-                proClub: "USM Alger",
-                proClubCountry: "algeria"
-            },
-            p13: {
-                fName: "Yasser",
-                lName: "Larouci",
-                position: "DEFENDER",
-                photo: "zaghba-removebg-preview.png",
-                age: "23",
-                height: "1.76",
-                proClub: "Sheffield United",
-                proClubCountry: "England"
-            },
+            // p12: {
+            //     fName: "Zineddine",
+            //     lName: "Belaïd",
+            //     position: "DEFENDER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "24",
+            //     height: "1.87",
+            //     proClub: "USM Alger",
+            //     proClubCountry: "algeria"
+            // },
+            // p13: {
+            //     fName: "Yasser",
+            //     lName: "Larouci",
+            //     position: "DEFENDER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "23",
+            //     height: "1.76",
+            //     proClub: "Sheffield United",
+            //     proClubCountry: "England"
+            // },
             p14: {
                 fName: "Ramiz",
                 lName: "Zerrouki",
                 position: "MIDFIELDER",
-                photo: "zaghba-removebg-preview.png",
+                photo: "zeroki.jpg",
                 age: "25",
                 height: "1.90",
                 proClub: "Feyenoord",
@@ -471,7 +512,7 @@ let allTeams = [
                 fName: "Sofiane",
                 lName: "Feghouli",
                 position: "MIDFIELDER",
-                photo: "zaghba-removebg-preview.png",
+                photo: "fegholi.jpg",
                 age: "34",
                 height: "1.77",
                 proClub: "Fatih Karagümrük",
@@ -481,7 +522,7 @@ let allTeams = [
                 fName: "Houssem",
                 lName: "Aouar",
                 position: "MIDFIELDER",
-                photo: "zaghba-removebg-preview.png",
+                photo: "aoura.jpg",
                 age: "25",
                 height: "1.75",
                 proClub: "a.C Roma",
@@ -491,37 +532,37 @@ let allTeams = [
                 fName: "Hicham",
                 lName: "Boudaoui",
                 position: "MIDFIELDER",
-                photo: "zaghba-removebg-preview.png",
+                photo: "boudawi.jpg",
                 age: "24",
                 height: "1.75",
                 proClub: "O.G.C Nice",
                 proClubCountry: "france"
             },
-            p18: {
-                fName: "Farès",
-                lName: "Chaïbi",
-                position: "MIDFIELDER",
-                photo: "zaghba-removebg-preview.png",
-                age: "21",
-                height: "1.83",
-                proClub: "Eintracht Frankfurt",
-                proClubCountry: "germany"
-            },
-            p19: {
-                fName: "Nabil",
-                lName: "Bentaleb",
-                position: "MIDFIELDER",
-                photo: "zaghba-removebg-preview.png",
-                age: "29",
-                height: "1.87",
-                proClub: "Lille",
-                proClubCountry: "france"
-            },
+            // p18: {
+            //     fName: "Farès",
+            //     lName: "Chaïbi",
+            //     position: "MIDFIELDER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "21",
+            //     height: "1.83",
+            //     proClub: "Eintracht Frankfurt",
+            //     proClubCountry: "germany"
+            // },
+            // p19: {
+            //     fName: "Nabil",
+            //     lName: "Bentaleb",
+            //     position: "MIDFIELDER",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "29",
+            //     height: "1.87",
+            //     proClub: "Lille",
+            //     proClubCountry: "france"
+            // },
             p20: {
                 fName: "Ismaël",
                 lName: "Bennacer",
                 position: "MIDFIELDER",
-                photo: "zaghba-removebg-preview.png",
+                photo: "bennacer.jpg",
                 age: "26",
                 height: "1.75",
                 proClub: "AC Milan",
@@ -531,7 +572,7 @@ let allTeams = [
                 fName: "Riyad",
                 lName: "Mahrez",
                 position: "FORWARD",
-                photo: "zaghba-removebg-preview.png",
+                photo: "mahrez.jpg",
                 age: "32",
                 height: "1.79",
                 proClub: "Al Ahly Jeddah",
@@ -541,7 +582,7 @@ let allTeams = [
                 fName: "Baghdad",
                 lName: "Bounedjah",
                 position: "FORWARD",
-                photo: "zaghba-removebg-preview.png",
+                photo: "bounejah.jpg",
                 age: "32",
                 height: "1.85",
                 proClub: "Al Saad S.C(",
@@ -551,47 +592,47 @@ let allTeams = [
                 fName: "Mohamed Youcef",
                 lName: "Belaïli",
                 position: "FORWARD",
-                photo: "zaghba-removebg-preview.png",
+                photo: "belaili.jpg",
                 age: "31",
                 height: "1.79",
                 proClub: "MC Alger",
                 proClubCountry: "algeria"
             },
-            p24: {
-                fName: "Adam",
-                lName: "Ounas",
-                position: "FORWARD",
-                photo: "zaghba-removebg-preview.png",
-                age: "27",
-                height: "1.72",
-                proClub: "Lille",
-                proClubCountry: "france"
-            },
-            p25: {
-                fName: "Islam",
-                lName: "Slimani",
-                position: "FORWARD",
-                photo: "zaghba-removebg-preview.png",
-                age: "35",
-                height: "1.88",
-                proClub: "Coritiba",
-                proClubCountry: "brazil"
-            },
-            p26: {
-                fName: "Mohamed El Amine",
-                lName: "Amoura",
-                position: "FORWARD",
-                photo: "zaghba-removebg-preview.png",
-                age: "23",
-                height: "1.68",
-                proClub: "Union Saint Gilloise",
-                proClubCountry: "Belgium"
-            },
+            // p24: {
+            //     fName: "Adam",
+            //     lName: "Ounas",
+            //     position: "FORWARD",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "27",
+            //     height: "1.72",
+            //     proClub: "Lille",
+            //     proClubCountry: "france"
+            // },
+            // p25: {
+            //     fName: "Islam",
+            //     lName: "Slimani",
+            //     position: "FORWARD",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "35",
+            //     height: "1.88",
+            //     proClub: "Coritiba",
+            //     proClubCountry: "brazil"
+            // },
+            // p26: {
+            //     fName: "Mohamed El Amine",
+            //     lName: "Amoura",
+            //     position: "FORWARD",
+            //     photo: "zaghba-removebg-preview.png",
+            //     age: "23",
+            //     height: "1.68",
+            //     proClub: "Union Saint Gilloise",
+            //     proClubCountry: "Belgium"
+            // },
             manager: {
                 fName: "Djamel",
                 lName: "Belmadi",
                 position: "MANAGER",
-                photo: "zaghba-removebg-preview.png",
+                photo: "belmadi.png",
                 age: "47",
                 height: "1.75",
                 proClub: "algeria",
@@ -2089,7 +2130,7 @@ if (currentPage.includes("all-news.html")) {
             </div>
         </div>
         `
-        pageBody.innerHTML += allNewsPageHtml
+        document.querySelector(".all-news-content").innerHTML = allNewsPageHtml
     }
     function newsBoxes(...list) {
         let newsBox = `
@@ -2219,7 +2260,7 @@ function newsGenerateHtml(...list) {
         </div>
     </div>
     `
-    pageBody.innerHTML += newsGenerateHtml
+    document.querySelector(".news-generate-content").innerHTML = newsGenerateHtml
 }
 let clickednews = document.querySelectorAll('.forNewsPage');
 let newsUrlParams = new URLSearchParams(window.location.search);
@@ -3423,14 +3464,14 @@ function teamHtml(...list) {
         </div>
     </div>
     `
-    pageBody.innerHTML += struct
+    document.querySelector(".team-profile-generate-content").innerHTML += struct
 }
 function playerCardHTML(...infolist) {
     let playerCardHTML =`
                     <div class="card">
                         <div class="content">
                             <div class="front">
-                                <img src="images/${infolist[7]}" alt="">
+                                <!-- <img src="images/${infolist[7]}" alt=""> -->
                                 <div class="player-image">
                                     <img src="images/${infolist[3]}" alt="">
                                 </div>
@@ -3677,6 +3718,7 @@ if (currentPage.includes("team-profile-generate.html")) {
 
 function gameProfileHtml(leftTeamGoals, rightTeamGoals, ...list) {
     gameHtml = `
+            
             <div class="stage-and-date">
                 <div class="stage">Match ${list[7]}, ${list[5]}</div>
                 <div class="date">${list[6]}, ${list[8]}</div>

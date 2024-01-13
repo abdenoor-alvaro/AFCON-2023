@@ -1335,7 +1335,7 @@ body ::-webkit-scrollbar-thumb {
     transition: transform 1s;
     transform-style: preserve-3d;
     background-color: white;
-    padding: 20px;
+    /* padding: 20px; */
     border: 2px solid #D5C46C;
     border-radius: 10px;
 }
@@ -1367,7 +1367,10 @@ body ::-webkit-scrollbar-thumb {
 .card .content .front .player-image {
     width: 100%;
     margin: auto;
-    
+    overflow: hidden;
+    /* border-radius: 10px; */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 .card .content .front .player-image img {
     width: 100%;
@@ -1377,6 +1380,7 @@ body ::-webkit-scrollbar-thumb {
     margin: auto;
     text-align: center;
     margin-top: 8px;
+    padding-bottom: 20px;
 }
 .card .content .front .info span {
     display: block;
@@ -1436,7 +1440,7 @@ body ::-webkit-scrollbar-thumb {
 /* Start Game Generate */
 .game-content {
     background-color: white;
-    padding-block: 30px;
+    padding: 50px 0px 100px;
 }
 .game-content .container .competition {
     width: fit-content;
@@ -1444,6 +1448,15 @@ body ::-webkit-scrollbar-thumb {
     color: #505b73;
     font-weight: 500;
     text-transform: capitalize;
+}
+.compitition-logo {
+    display: flex;
+    justify-content: center;
+    background-color: #064434;
+    padding: 10px;
+}
+.compitition-logo img {
+    width: 100px;
 }
 .game-content .container .stage-and-date {
     display: flex;
@@ -1924,7 +1937,8 @@ footer {
     left: 0;
     width: 100%;
     overflow: hidden;
-    background-color: #083b03;
+    background-color: #064434;
+    /* background-color: #083b03; */
     height: 500px;
     color: white;
 }
@@ -1956,9 +1970,10 @@ footer {
     width: 100%;
 }
 .footer span {
-    font-size: 13px;
+    text-wrap: nowrap;
+    font-size: 12px;
     position: absolute;
-    top: -20px;
+    top: -18px;
     left: 50%;
     transform: translate(-50%);
 }
@@ -1971,14 +1986,14 @@ footer {
     display: flex;
     justify-content: center;
     padding: 10px 30px;
-    color: #fee050;
+    color: #EF8F1F;
     border: 4px solid #EF8F1F;
     font-size: 18px;
     transition: 0.3s;
 }
 .footer .contact-us-btn a:hover {
-    background-color: #fee050;
-    color: #19057a;
+    background-color: #EF8F1F;
+    color: white;
 }
 .footer .right-side {
     border-left: 2px solid #EF8F1F;
@@ -2033,11 +2048,11 @@ footer {
         margin-bottom: 40px;
     }
     .footer .contact-us-btn {
-        max-width: fit-content;
+        max-width: 200px;
     }
     .footer .contact-us-btn a {
         padding: 8px 24px;
-        border: 4px solid #fee050;
+        border: 3px solid #EF8F1F;
         font-size: 16px;
     }
     .footer span {
@@ -2047,17 +2062,14 @@ footer {
     }
     .footer .right-side li {
         flex: 1;
-        padding-left: 50px;
+        padding-left: 40px;
     }
     .footer .right-side li a {
-        height: 50px;
+        height: 40px;
         font-size: 17px;
     }
     .footer .right-side li a div {
         display: none;
-    }
-    .footer .right-side li a:hover {
-        color: #05b9ca;
     }
 }
 @media (max-width:550px) {
