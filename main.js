@@ -737,12 +737,12 @@ let days = {
                 name: allTeams[0].name,
                 // name: "ivory coast",
                 flag: "Flag-Cote-dIvoire.webp",
-                score: false,
+                score: "1",
                 goals: {
-                    // goal1: {
-                    //     minute: '21"',
-                    //     player: "riyad mahrez",
-                    //     assist:false,
+                     goal1: {
+                         minute: '4"',
+                         player: "S.Fofana",
+                         assist:"F.Kessié",
                     //     penalty: "(P)"
                     // },
                     // goal4: {
@@ -770,7 +770,7 @@ let days = {
             teamTwo: {
                 name: "guinea-bissau",
                 flag: "istockphoto-1457742800-612x612.jpg",
-                score: false,
+                score: "0",
                 goals: {
                 },
             },
