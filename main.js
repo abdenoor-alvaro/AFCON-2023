@@ -743,29 +743,11 @@ let days = {
                          minute: "4'",
                          player: "S.Fofana",
                          assist:"F.Kessié",
-                    //     penalty: "(P)"
                      },
                      goal2: {
                          minute: "58'",
                          player: "J. Krasso",
-                    //     assist: "odegard",
-                    //     penalty: false
-                     },
-
-
-                    // goal1: {
-                    //     minute: '21"',
-                    //     player: "riyad mahrez",
-                    //     assist:false,
-                    //     penalty: "(P)"
-                    // },
-                    // goal4: {
-                    //     minute: "02'",
-                    //     player: "bokayo saka",
-                    //     assist: "odegard",
-                    //     penalty: false
-                    // },
-                         
+                     },                   
                 }
             },
             teamTwo: {
