@@ -739,7 +739,32 @@ let days = {
                 flag: "Flag-Cote-dIvoire.webp",
                 score: false,
                 goals: {
-                    
+                    // goal1: {
+                    //     minute: '21"',
+                    //     player: "riyad mahrez",
+                    //     assist:false,
+                    //     penalty: "(P)"
+                    // },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
+
+
+                    // goal1: {
+                    //     minute: '21"',
+                    //     player: "riyad mahrez",
+                    //     assist:false,
+                    //     penalty: "(P)"
+                    // },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 }
             },
             teamTwo: {
