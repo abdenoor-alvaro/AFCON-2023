@@ -892,7 +892,7 @@ let days = {
             teamTwo: {
                 name: "cape verde",
                 flag: "Flag-of-Cape-Verde-01.png",
-                score: 1,
+                score: 2,
                 goals: {
                      goal1: {
                          minute: "17'",
@@ -900,12 +900,12 @@ let days = {
                          assist:false,
                          penalty: false
                      },
-                    // goal4: {
-                    //     minute: "02'",
-                    //     player: "bokayo saka",
-                    //     assist: "odegard",
-                    //     penalty: false
-                    // },
+                     goal2: {
+                         minute: "90'+2",
+                         player: "Garry Rodrigues",
+                         assist: "Gilson Tavares",
+                         penalty: false
+                     },
                 },
             },
             group: "Group B",
