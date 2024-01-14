@@ -826,14 +826,26 @@ let days = {
             teamOne: {
                 name: "egypt",
                 flag: "553_1600x.webp",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "2'",
+                         player: "Mustapha Mohamed",
+                         assist:"Mohamed Salah",
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             teamTwo: {
                 name: "mozambique",
                 flag: "Flag-Mozambique.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
