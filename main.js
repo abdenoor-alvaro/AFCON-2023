@@ -805,7 +805,7 @@ let days = {
                          minute: "36'",
                          player: "lban Salvador",
                          assist:"Jose Machin",
-                         penalty: "(P)"
+                         penalty: false
                       },
                     // goal4: {
                     //     minute: "02'",
