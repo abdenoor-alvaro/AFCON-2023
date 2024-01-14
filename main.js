@@ -820,7 +820,7 @@ let days = {
             match: "02",
             city: "Abidjan",
             stadium: "Alassane Ouattara Stadium",
-            highlight: "#"
+            highlight: "RyhUiuA7Dq4?si=2Vo72Sabd6v0tWZU"
         },
         game2: {
             teamOne: {
