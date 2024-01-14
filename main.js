@@ -3775,138 +3775,212 @@ for (let i = 0; i < dayss.length; i++) {
         let game = Object.values(day[j + 1])
         let teamOne = Object.values(game[0])
         let teamTwo = Object.values(game[1])
-        let goalsTeamOne = []
-        let goalsTeamTwo = []
-        if (teamOne[3] !== undefined) {
-            goalsTeamOne = Object.values(teamOne[3])
-        }
-        if (teamTwo[3] !== undefined) {
-            goalsTeamTwo = Object.values(teamTwo[3])
-        }
-        let date = "NY"
-        if (day[0] !== "NY") {
-            let dateArray = day[0].split(" ")
-            date = `${dateArray[1]} ${dateArray[2].slice(0, 3).toUpperCase()} ${dateArray[3]}`
-        }
-        let score
-        let penalties = ` `
-        let fullTime = `<div class="full-time">Full Time</div>`
-        let leftTeamName = teamOne[0]
-        let rightTeamName = teamTwo[0]
-        let leftTeamPageLink = `${teamOne[0]}.html`
-        let rightTeamPageLink = `${teamTwo[0]}.html`
-        let leftFlag = ` `
-        let rightFlag = ` `
-        let winnerTeamLeft = ` `
-        let winnerTeamRight = ` `
-        let divTeamOne = document.createElement("div")
-        let divTeamTwo = document.createElement("div")
-        let goals = `
-        <div class="goals">
-                <div class="left-team-goals">
-                    <div>
-                        <div class="goal">
-                            <div class="penalty">(P)</div>
-                            <div class="minute">42'</div>
-                            <div class="player">
-                                <div class="player-goal">ORSIC</div>
-                                <div class="player-assist">ORSIC</div>
+        if (gameId === `g${game[4]}`) {
+            let goalsTeamOne = []
+            let goalsTeamTwo = []
+            if (teamOne[3] !== undefined) {
+                goalsTeamOne = Object.values(teamOne[3])
+            }
+            if (teamTwo[3] !== undefined) {
+                goalsTeamTwo = Object.values(teamTwo[3])
+            }
+            let date = "NY"
+            if (day[0] !== "NY") {
+                let dateArray = day[0].split(" ")
+                date = `${dateArray[1]} ${dateArray[2].slice(0, 3).toUpperCase()} ${dateArray[3]}`
+            }
+            let score
+            let penalties = ` `
+            let fullTime = `<div class="full-time">Full Time</div>`
+            let time = convertTime(game[3])
+            const currentDate = new Date();
+
+            // Get the current time
+            const currentHours = currentDate.getHours();
+            const currentMinutes = currentDate.getMinutes();
+            const currentSeconds = currentDate.getSeconds();
+
+            // Display the current time
+            console.log(`Current time: ${currentHours}:${currentMinutes}:${currentSeconds}`);
+            console.log(time)
+            let leftTeamName = teamOne[0]
+            let rightTeamName = teamTwo[0]
+            let leftTeamPageLink = `${teamOne[0]}.html`
+            let rightTeamPageLink = `${teamTwo[0]}.html`
+            let leftFlag = ` `
+            let rightFlag = ` `
+            let winnerTeamLeft = ` `
+            let winnerTeamRight = ` `
+            let divTeamOne = document.createElement("div")
+            let divTeamTwo = document.createElement("div")
+            let goals = `
+            <div class="goals">
+                    <div class="left-team-goals">
+                        <div>
+                            <div class="goal">
+                                <div class="penalty">(P)</div>
+                                <div class="minute">42'</div>
+                                <div class="player">
+                                    <div class="player-goal">ORSIC</div>
+                                    <div class="player-assist">ORSIC</div>
+                                </div>
+                                <div class="ball-icon"><i class="fa fa-soccer-ball"></i></div>    
                             </div>
-                            <div class="ball-icon"><i class="fa fa-soccer-ball"></i></div>    
+                            <div class="goal">
+                                <div class="penalty">(P)</div>
+                                <div class="minute">42'</div>
+                                <div class="player">Mislav</div>
+                                <div class="ball-icon"><i class="fa fa-soccer-ball"></i></div>    
+                            </div>
                         </div>
+                    </div>
+                    <div class="empty-div"></div>
+                    <div class="right-team-goals">
                         <div class="goal">
+                            <div class="ball-icon"><i class="fa fa-soccer-ball"></i></div>  
+                            <div class="player">ORSSAFSHJ</div>
+                            <div class="minute">42'</div>  
                             <div class="penalty">(P)</div>
-                            <div class="minute">42'</div>
-                            <div class="player">Mislav</div>
-                            <div class="ball-icon"><i class="fa fa-soccer-ball"></i></div>    
                         </div>
                     </div>
                 </div>
-                <div class="empty-div"></div>
-                <div class="right-team-goals">
-                    <div class="goal">
-                        <div class="ball-icon"><i class="fa fa-soccer-ball"></i></div>  
-                        <div class="player">ORSSAFSHJ</div>
-                        <div class="minute">42'</div>  
-                        <div class="penalty">(P)</div>
-                    </div>
+            `
+            let highlight = `
+                <div class="highlights-btn">
+                    <a href="#" id="playButton" onclick="openVideoFullscreen('${game[7]}')">
+                        <i class="fa fa-play"></i>
+                    highlights
+                    </a>
                 </div>
-            </div>
-        `
-        let highlight = `
-            <div class="highlights-btn">
-                <a href="#" id="playButton" onclick="openVideoFullscreen('${game[7]}')">
-                    <i class="fa fa-play"></i>
-                highlights
-                </a>
-            </div>
-        `
-        if (game[7] === "#") {
-
-            highlight = `
-            <div class="highlights-btn">
-                <a href="#" id="playButton"  onclick="openHighlightNTFullscreen()">
-                    <i class="fa fa-play"></i>
-                highlights
-                </a>
-            </div>
             `
-        }
-        // console.log(highlight)
-        if (screen.width < 768) {
-            allTeams.forEach(team => {
-                if (team.name === teamOne[0].toLowerCase()) {
-                    leftTeamName = team.subName
-                }
-                if (team.name === teamTwo[0].toLowerCase()) {
-                    rightTeamName = team.subName
-                }
-            })
-            if (teamTwo[0].toLowerCase().includes("loser") || teamTwo[0].toLowerCase().includes("winner")) {
-                rightTeamName = `${teamTwo[0].split(" ")[0].charAt(0)}${teamTwo[0].split(" ")[1]}`
+            if (game[7] === "#") {
+
+                highlight = `
+                <div class="highlights-btn">
+                    <a href="#" id="playButton"  onclick="openHighlightNTFullscreen()">
+                        <i class="fa fa-play"></i>
+                    highlights
+                    </a>
+                </div>
+                `
             }
-            if (teamOne[0].toLowerCase().includes("loser") || teamOne[0].toLowerCase().includes("winner")) {
-                leftTeamName = `${teamOne[0].split(" ")[0].charAt(0)}${teamOne[0].split(" ")[1]}`
+            // console.log(highlight)
+            if (screen.width < 768) {
+                allTeams.forEach(team => {
+                    if (team.name === teamOne[0].toLowerCase()) {
+                        leftTeamName = team.subName
+                    }
+                    if (team.name === teamTwo[0].toLowerCase()) {
+                        rightTeamName = team.subName
+                    }
+                })
+                if (teamTwo[0].toLowerCase().includes("loser") || teamTwo[0].toLowerCase().includes("winner")) {
+                    rightTeamName = `${teamTwo[0].split(" ")[0].charAt(0)}${teamTwo[0].split(" ")[1]}`
+                }
+                if (teamOne[0].toLowerCase().includes("loser") || teamOne[0].toLowerCase().includes("winner")) {
+                    leftTeamName = `${teamOne[0].split(" ")[0].charAt(0)}${teamOne[0].split(" ")[1]}`
+                }
             }
-        }
 
 
-        if (teamOne[2] === false || teamTwo[2] === false) {
-            score = `<p>VS</p>`
-            goals = " "
-            highlight = " "
-            fullTime =  " "
-        } else {
-            score = `<p>${teamOne[2]}&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;${teamTwo[2]}</p>`
+            if (teamOne[2] === false || teamTwo[2] === false) {
+                score = `<p>VS</p>`
+                goals = " "
+                highlight = " "
+                fullTime =  " "
+            } else {
+                score = `<p>${teamOne[2]}&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;${teamTwo[2]}</p>`
+                
+            }
+
+            if (game[8] !== undefined) {
+                let drawInfo = Object.values(game[8])
+                penalties = `<div class="penalties">${drawInfo[0]} wins ${drawInfo[1]} - ${drawInfo[2]} on penalties</div>`
+                score = `
+                <span>(${drawInfo[2]})</span>
+                <p>${teamOne[2]}&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;${teamTwo[2]}</p>
+                <span>(${drawInfo[1]})</span>
+                `
+            }
+            if (teamOne[1] === "empty.png") {
+                leftFlag = `style="border: 5px solid rgb(16, 30, 63);"`
+            }
+            if (teamTwo[1] === "empty.png") {
+                rightFlag = `style="border: 5px solid rgb(16, 30, 63);"`
+            }
             
-        }
+            if (teamOne[4] !== undefined) {
+                winnerTeamLeft = `<div class="winner"></div>`
+            }
+            if (teamTwo[4] !== undefined) {
+                winnerTeamRight = `<div class="winner"></div>`
+            }
 
-        if (game[8] !== undefined) {
-            let drawInfo = Object.values(game[8])
-            penalties = `<div class="penalties">${drawInfo[0]} wins ${drawInfo[1]} - ${drawInfo[2]} on penalties</div>`
-            score = `
-            <span>(${drawInfo[2]})</span>
-            <p>${teamOne[2]}&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;${teamTwo[2]}</p>
-            <span>(${drawInfo[1]})</span>
-            `
-        }
-        if (teamOne[1] === "empty.png") {
-            leftFlag = `style="border: 5px solid rgb(16, 30, 63);"`
-        }
-        if (teamTwo[1] === "empty.png") {
-            rightFlag = `style="border: 5px solid rgb(16, 30, 63);"`
-        }
-        
-        if (teamOne[4] !== undefined) {
-            winnerTeamLeft = `<div class="winner"></div>`
-        }
-        if (teamTwo[4] !== undefined) {
-            winnerTeamRight = `<div class="winner"></div>`
-        }
+            if (goalsTeamOne.length > 0) {
+                for (let n = 0; n < goalsTeamOne.length; n++) {
+                    let goal = Object.values(goalsTeamOne[n])
+                    let assist = goal[2]
+                    let penalty = goal[3]
+                    let goalScorer = goal[1]
+                    if (screen.width < 768 && goal[2] !== false) {
+                        assist = goal[2].split(" ")
+                        assist = assist[assist.length - 1]
+                    }
+                    if (goal[2] === false) {
+                        assist = ` `
+                    }
+                    if (goal[3] === false) {
+                        penalty = ` `
+                    }
+                    if (screen.width < 768) {
+                        goalScorer = goal[1].split(" ")
+                        goalScorer = goalScorer[goalScorer.length - 1]
+                    }
+                    let listTeamOne = [divTeamOne, goal[0], goalScorer, assist, penalty]
 
-        if (goalsTeamOne.length > 0) {
-            for (let n = 0; n < goalsTeamOne.length; n++) {
-                let goal = Object.values(goalsTeamOne[n])
+
+                    if (goalsTeamOne.length - 1 === n) {
+                        break
+                    } else {
+                        goalHtmlTeamOne(...listTeamOne)
+                    }
+                }
+            } 
+            for (let n = 0; n < goalsTeamTwo.length; n++) {
+                let goal = Object.values(goalsTeamTwo[n])
+                let goalScorer = goal[1]
+                let assist = goal[2]
+                let penalty = goal[3]
+                if (screen.width < 768 && goal[2] !== false) {
+                    assist = goal[2].split(" ")
+                    assist = assist[assist.length - 1]
+                }
+                if (goal[2] === false) {
+                    assist = ` `
+                }
+                if (goal[3] === false) {
+                    penalty = ` `
+                }
+                if (screen.width < 768) {
+                    goalScorer = goal[1].split(" ")
+                    goalScorer = goalScorer[goalScorer.length - 1]
+                }
+                let listTeamTwo = [divTeamTwo, goal[0], goalScorer, assist, penalty]
+
+
+                if (goalsTeamTwo.length - 1 === n) {
+                    break
+                } else {
+                    
+                    goalHtmlTeamTwo(...listTeamTwo)
+                }
+            }
+
+            
+            let functionCallTeamOne = " " 
+            let functionCallTeamTwo = " " 
+            if (goalsTeamOne.length > 0) {
+                let goal = Object.values(goalsTeamOne[goalsTeamOne.length - 1])
                 let assist = goal[2]
                 let penalty = goal[3]
                 let goalScorer = goal[1]
@@ -3926,96 +4000,34 @@ for (let i = 0; i < dayss.length; i++) {
                 }
                 let listTeamOne = [divTeamOne, goal[0], goalScorer, assist, penalty]
 
-
-                if (goalsTeamOne.length - 1 === n) {
-                    break
-                } else {
-                    goalHtmlTeamOne(...listTeamOne)
-                }
-            }
-        } 
-        for (let n = 0; n < goalsTeamTwo.length; n++) {
-            let goal = Object.values(goalsTeamTwo[n])
-            let goalScorer = goal[1]
-            let assist = goal[2]
-            let penalty = goal[3]
-            if (screen.width < 768 && goal[2] !== false) {
-                assist = goal[2].split(" ")
-                assist = assist[assist.length - 1]
-            }
-            if (goal[2] === false) {
-                assist = ` `
-            }
-            if (goal[3] === false) {
-                penalty = ` `
-            }
-            if (screen.width < 768) {
-                goalScorer = goal[1].split(" ")
-                goalScorer = goalScorer[goalScorer.length - 1]
-            }
-            let listTeamTwo = [divTeamTwo, goal[0], goalScorer, assist, penalty]
-
-
-            if (goalsTeamTwo.length - 1 === n) {
-                break
-            } else {
+                functionCallTeamOne = goalHtmlTeamOne(...listTeamOne)
                 
-                goalHtmlTeamTwo(...listTeamTwo)
             }
-        }
-
+            if (goalsTeamTwo.length > 0) {
+                let goal = Object.values(goalsTeamTwo[goalsTeamTwo.length - 1])
+                let goalScorer = goal[1]
+                let assist = goal[2]
+                let penalty = goal[3]
+                if (screen.width < 768 && goal[2] !== false) {
+                    assist = goal[2].split(" ")
+                    assist = assist[assist.length - 1]
+                }
+                if (goal[2] === false) {
+                    assist = ` `
+                }
+                if (goal[3] === false) {
+                    penalty = ` `
+                }
+                if (screen.width < 768) {
+                    goalScorer = goal[1].split(" ")
+                    goalScorer = goalScorer[goalScorer.length - 1]
+                }
+                let listTeamTwo = [divTeamTwo, goal[0], goalScorer, assist, penalty]
+                functionCallTeamTwo = goalHtmlTeamTwo(...listTeamTwo)
+            }
         
-        let functionCallTeamOne = " " 
-        let functionCallTeamTwo = " " 
-        if (goalsTeamOne.length > 0) {
-            let goal = Object.values(goalsTeamOne[goalsTeamOne.length - 1])
-            let assist = goal[2]
-            let penalty = goal[3]
-            let goalScorer = goal[1]
-            if (screen.width < 768 && goal[2] !== false) {
-                assist = goal[2].split(" ")
-                assist = assist[assist.length - 1]
-            }
-            if (goal[2] === false) {
-                assist = ` `
-            }
-            if (goal[3] === false) {
-                penalty = ` `
-            }
-            if (screen.width < 768) {
-                goalScorer = goal[1].split(" ")
-                goalScorer = goalScorer[goalScorer.length - 1]
-            }
-            let listTeamOne = [divTeamOne, goal[0], goalScorer, assist, penalty]
-
-            functionCallTeamOne = goalHtmlTeamOne(...listTeamOne)
-            
-        }
-        if (goalsTeamTwo.length > 0) {
-            let goal = Object.values(goalsTeamTwo[goalsTeamTwo.length - 1])
-            let goalScorer = goal[1]
-            let assist = goal[2]
-            let penalty = goal[3]
-            if (screen.width < 768 && goal[2] !== false) {
-                assist = goal[2].split(" ")
-                assist = assist[assist.length - 1]
-            }
-            if (goal[2] === false) {
-                assist = ` `
-            }
-            if (goal[3] === false) {
-                penalty = ` `
-            }
-            if (screen.width < 768) {
-                goalScorer = goal[1].split(" ")
-                goalScorer = goalScorer[goalScorer.length - 1]
-            }
-            let listTeamTwo = [divTeamTwo, goal[0], goalScorer, assist, penalty]
-            functionCallTeamTwo = goalHtmlTeamTwo(...listTeamTwo)
-        }
-        if (gameId === `g${game[4]}`) {
             document.querySelector('title').textContent = `MATCH ${game[4]}`
-            let list = [gameContent, leftTeamName, teamOne[1], rightTeamName, teamTwo[1], game[2], convertTime(game[3]), game[4], date, score, penalties, fullTime, leftFlag, rightFlag, goals, highlight, game[5], game[6], teamNameId(teamOne[0]), teamNameId(teamTwo[0]), winnerTeamLeft, winnerTeamRight]
+            let list = [gameContent, leftTeamName, teamOne[1], rightTeamName, teamTwo[1], game[2], time, game[4], date, score, penalties, fullTime, leftFlag, rightFlag, goals, highlight, game[5], game[6], teamNameId(teamOne[0]), teamNameId(teamTwo[0]), winnerTeamLeft, winnerTeamRight]
             gameProfileHtml(functionCallTeamOne, functionCallTeamTwo, ...list)
         }
     } 
