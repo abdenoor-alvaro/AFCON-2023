@@ -872,16 +872,40 @@ let days = {
             teamOne: {
                 name: "ghana",
                 flag: "Flag-Ghana.webp",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "56'",
+                         player: "Alexander Djiku",
+                         assist:"Jordan Ayew",
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                     
                 }
             },
             teamTwo: {
                 name: "cape verde",
                 flag: "Flag-of-Cape-Verde-01.png",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "17'",
+                         player: "Jamiro Monteiro",
+                         assist:false,
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             group: "Group B",
