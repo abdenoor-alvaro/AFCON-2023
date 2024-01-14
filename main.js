@@ -743,11 +743,20 @@ let days = {
                          minute: "4'",
                          player: "S.Fofana",
                          assist:"F.Kessié",
+                         penalty: false
                      },
                      goal2: {
                          minute: "58'",
                          player: "J. Krasso",
-                     },                   
+                         assist:false,
+                         penalty: false
+                     },     
+                    // goal3: {
+                    //     minute: "45'",
+                    //     player: "havertz",
+                    //     assist: "bokayo saka",
+                    //     penalty: false
+                    // },
                 }
             },
             teamTwo: {
