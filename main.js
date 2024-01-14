@@ -826,7 +826,7 @@ let days = {
             teamOne: {
                 name: "egypt",
                 flag: "553_1600x.webp",
-                score: 1,
+                score: 2,
                 goals: {
                      goal1: {
                          minute: "2'",
@@ -834,19 +834,31 @@ let days = {
                          assist:"Mohamed Salah",
                          penalty: false
                      },
-                    // goal4: {
-                    //     minute: "02'",
-                    //     player: "bokayo saka",
-                    //     assist: "odegard",
-                    //     penalty: false
-                    // },
+                     goal2: {
+                         minute: "90'+7",
+                         player: "Mohamed Salah",
+                         assist: false,
+                         penalty: "(p)"
+                     },
                 },
             },
             teamTwo: {
                 name: "mozambique",
                 flag: "Flag-Mozambique.webp",
-                score: 0,
+                score: 2,
                 goals: {
+                     goal1: {
+                         minute: "55'",
+                         player: "witi",
+                         assist:"Domingos Macandza",
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "58'",
+                         player: "	Clesio Bauque",
+                         assist: "guima",
+                         penalty: false
+                     },
                 },
             },
             group: "Group B",
