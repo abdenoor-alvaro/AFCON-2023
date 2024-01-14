@@ -2035,33 +2035,36 @@ let groupF = ["morocco", "dr congo", "zambia", "tanzania"]
 
 // Start Latest News Data
 let newsData = {
-    // news3: {
-    //     img: "news3.webp",
-    //     header: "PHOTOS: AFCON 2023 Opening Ceremony",
-    //     description: `
-    //     <style>
-    //     .n3 p{
-    //         margin-bottom: 16;
-    //     }
-    //     .n3 img {
-    //         width:100%;
-    //         margin-bottom: 16;
-    //     }
-    //     </style>
-    //     <p><b>An electric opening ceremony kicked off the TotalEnergies CAF Africa Cup of Nations Cote d'Ivoire 2023 in thrilling style on Saturday night in Abidjan.</b></p>
-
-    //     <p>A capacity 60,000 crowd at the Alassane Ouattara Olympic Stadium soaked up the colours and culture of Cote d'Ivoire ahead of the tournament opener between the hosts and Guinea Bissau.</p>
+    news3: {
+        img: "news3.webp",
+        header: "PHOTOS: AFCON 2023 Opening Ceremony",
+        description: `
+        <style>
+        .n3 a,
+        .n3 b {
+            margin-bottom: 16;
+            display:block;
+        }
+        .n3 img {
+            width:100%;
+            margin-bottom: 16;
+        }
+        </style>
+        <b>An electric opening ceremony kicked off the TotalEnergies CAF Africa Cup of Nations Cote d'Ivoire 2023 in thrilling style on Saturday night in Abidjan.</b>
+        <a>A capacity 60,000 crowd at the Alassane Ouattara Olympic Stadium soaked up the colours and culture of Cote d'Ivoire ahead of the tournament opener between the hosts and Guinea Bissau.</a>
+        <a>The celebration featured singers, acrobats and dancers in a vibrant showcase of Ivorian tradition and African unity.</a>
+        <img src="images/news3+.webp" alt="" class="thumbnail" onclick="openImage('images/news3+.webp')">
         
-    //     <p>The celebration featured singers, acrobats and dancers in a vibrant showcase of Ivorian tradition and African unity.</p>
-    //     <img src="images/news3+.webp" alt="">
-    //     <p>Fireworks in the Ivorian national colours lit up the Abidjan sky at the end of the ceremony to launch Africa's biggest football party in spectacular fashion. </p>
+        <a>Fireworks in the Ivorian national colours lit up the Abidjan sky at the end of the ceremony to launch Africa's biggest football party in spectacular fashion. </a>
         
-    //     <p>The stunning spectacle whipped fans into a frenzy moments before kick-off as the continental showpiece got underway.</p>`,
-    //     date: "13 Jan 2024",
-    //     lan: "english",
-    //     postId: "n3",
-    //     // video: "TVV95Cw05og?si=Vl6BRuQVvy3K1I77"
-    // },
+        <a>The stunning spectacle whipped fans into a frenzy moments before kick-off as the continental showpiece got underway.</a>
+        
+`,
+        date: "13 Jan 2024",
+        lan: "english",
+        postId: "n3",
+        // video: "TVV95Cw05og?si=Vl6BRuQVvy3K1I77"
+    },
     news2: {
         img: "news2.webp",
         header: "Final Squad Lists for AFCON 2023 ",
@@ -2156,36 +2159,6 @@ Click <b>BELOW</b> for the TotalEnergies CAF AFCON squads.
         date: "12 Oct 2023",
         lan: "english",
         postId: "n1",
-        // video: "TVV95Cw05og?si=Vl6BRuQVvy3K1I77"
-    },
-    news4: {
-        img: "news3.webp",
-        header: "PHOTOS: AFCON 2023 Opening Ceremony",
-        description: `
-        <style>
-        .n3 a,
-        .n3 b {
-            margin-bottom: 16;
-            display:block;
-        }
-        .n3 img {
-            width:100%;
-            margin-bottom: 16;
-        }
-        </style>
-        <b>An electric opening ceremony kicked off the TotalEnergies CAF Africa Cup of Nations Cote d'Ivoire 2023 in thrilling style on Saturday night in Abidjan.</b>
-        <a>A capacity 60,000 crowd at the Alassane Ouattara Olympic Stadium soaked up the colours and culture of Cote d'Ivoire ahead of the tournament opener between the hosts and Guinea Bissau.</a>
-        <a>The celebration featured singers, acrobats and dancers in a vibrant showcase of Ivorian tradition and African unity.</a>
-        <img src="images/news3+.webp" alt="" class="thumbnail" onclick="openImage('images/news3+.webp')">
-        
-        <a>Fireworks in the Ivorian national colours lit up the Abidjan sky at the end of the ceremony to launch Africa's biggest football party in spectacular fashion. </a>
-        
-        <a>The stunning spectacle whipped fans into a frenzy moments before kick-off as the continental showpiece got underway.</a>
-        
-`,
-        date: "13 Jan 2024",
-        lan: "english",
-        postId: "n3",
         // video: "TVV95Cw05og?si=Vl6BRuQVvy3K1I77"
     },
 }
