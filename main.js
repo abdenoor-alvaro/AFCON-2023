@@ -837,7 +837,7 @@ let days = {
                      goal2: {
                          minute: "90'+7",
                          player: "Mohamed Salah",
-                         assist: false
+                         assist: false,
                          penalty: "(p)"
                      },
                 },
