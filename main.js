@@ -1015,7 +1015,7 @@ let days = {
             teamOne: {
                 name: "angola",
                 flag: "Flag-Angola.webp",
-                score: false,
+                score: 0,
                 goals: {
                     // goal3: {
                     //     minute: "45'",
@@ -1028,14 +1028,14 @@ let days = {
             teamTwo: {
                 name: "algeria",
                 flag: "Flag_of_Algeria.svg",
-                score: false,
+                score: 1,
                 goals: {
-                    // goal1: {
-                    //     minute: '21"',
-                    //     player: "riyad mahrez",
-                    //     assist:false,
-                    //     penalty: "(P)"
-                    // },
+                     goal1: {
+                         minute: "18'",
+                         player: "Baghdad Bounedjah",
+                         assist:"Youcef Belaili",
+                         penalty: false
+                     },
                     // goal4: {
                     //     minute: "02'",
                     //     player: "bokayo saka",
