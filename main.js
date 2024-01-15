@@ -969,15 +969,39 @@ let days = {
             teamOne: {
                 name: "cameroon",
                 flag: "download (1).png",
-                score: false,
-                goals: {
+                score: 1,
+                goals: { 
+                 goal1: {
+                         minute: "51'",
+                         player: "Frank Magri",
+                         assist:false,
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             teamTwo: {
                 name: "guinea",
                 flag: "Flag-Guinea.webp",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "10'",
+                         player: "Mohamed Bayo",
+                         assist:false,
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             group: "Group C",
