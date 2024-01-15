@@ -929,7 +929,7 @@ let days = {
             teamTwo: {
                 name: "senegal",
                 flag: "Flag-Senegal.webp",
-                score: 2,
+                score: 3,
                 goals: {
                      goal1: {
                          minute: "4'",
@@ -944,6 +944,18 @@ let days = {
                          penalty: false
                      },
                 },
+                 goal3: {
+                         minute: "86'",
+                         player: "Lamine Camara",
+                         assist:"Iliman Ndiaye",
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
             },
             group: "Group C",
             time: "14:00 GMT",
