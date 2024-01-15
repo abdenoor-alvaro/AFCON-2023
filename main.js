@@ -950,6 +950,7 @@ let days = {
                          assist:"Iliman Ndiaye",
                          penalty: false
                      },
+                },
                     // goal4: {
                     //     minute: "02'",
                     //     player: "bokayo saka",
