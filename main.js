@@ -922,15 +922,27 @@ let days = {
             teamOne: {
                 name: "gambia",
                 flag: "Flag-of-The-Gambia.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
             teamTwo: {
                 name: "senegal",
                 flag: "Flag-Senegal.webp",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "4'",
+                         player: "Pape Gueye",
+                         assist:"Sadio Mane",
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             group: "Group C",
