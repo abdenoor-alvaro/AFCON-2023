@@ -929,7 +929,7 @@ let days = {
             teamTwo: {
                 name: "senegal",
                 flag: "Flag-Senegal.webp",
-                score: 1,
+                score: 2,
                 goals: {
                      goal1: {
                          minute: "4'",
@@ -937,12 +937,12 @@ let days = {
                          assist:"Sadio Mane",
                          penalty: false
                      },
-                    // goal4: {
-                    //     minute: "02'",
-                    //     player: "bokayo saka",
-                    //     assist: "odegard",
-                    //     penalty: false
-                    // },
+                     goal2: {
+                         minute: "52'",
+                         player: "Lamine Camara",
+                         assist: "Ismaila Sarr",
+                         penalty: false
+                     },
                 },
             },
             group: "Group C",
