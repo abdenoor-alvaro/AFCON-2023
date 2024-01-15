@@ -943,7 +943,7 @@ let days = {
                          assist: "Ismaila Sarr",
                          penalty: false
                      },
-                },
+                
                  goal3: {
                          minute: "86'",
                          player: "Lamine Camara",
