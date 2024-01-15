@@ -1015,14 +1015,14 @@ let days = {
             teamOne: {
                 name: "angola",
                 flag: "Flag-Angola.webp",
-                score: 0,
+                score: 1,
                 goals: {
-                    // goal3: {
-                    //     minute: "45'",
-                    //     player: "havertz",
-                    //     assist: "bokayo saka",
-                    //     penalty: false
-                    // },
+                     goal1: {
+                         minute: "68'",
+                         player: "Mabululu",
+                         assist: false,
+                         penalty: "(p)"
+                     },
                 },
             },
             teamTwo: {
