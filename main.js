@@ -1093,14 +1093,26 @@ let days = {
             teamOne: {
                 name: "namibia",
                 flag: "Flag-Namibia.webp",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "88'",
+                         player: "Deon Hotto",
+                         assist:"Bethuel Muzeu",
+                         penalty: false 
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             teamTwo: {
                 name: "tunisia",
                 flag: "1024px-Flag_of_Tunisia.png",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
