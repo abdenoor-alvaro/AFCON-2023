@@ -1066,8 +1066,20 @@ let days = {
             teamTwo: {
                 name: "burkina faso",
                 flag: "Flag-Burkina-Faso.webp",
-                score: 0,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "90'+6",
+                         player: "Bertrand Traore",
+                         assist:false,
+                         penalty: "(P)"
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             group: "Group D",
