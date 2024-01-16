@@ -1059,14 +1059,14 @@ let days = {
             teamOne: {
                 name: "mauritania",
                 flag: "Flag-Mauritania.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
             teamTwo: {
                 name: "burkina faso",
                 flag: "Flag-Burkina-Faso.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
