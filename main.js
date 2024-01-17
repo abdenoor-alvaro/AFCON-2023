@@ -1166,12 +1166,24 @@ let days = {
                 flag: "ma.png",
                 score: 1,
                 goals: {
-                   
+                    goals1:{
                          minute: "30'",
                          player: "Romain Saiss",
                          assist:false,
-                         penalty: false
+                         penalty:false
                      }, 
+                     goal2: {
+                         minute: "77'",
+                         player: "Azzedine Ounahi",
+                         assist:"Amine Adli",
+                         penalty: false
+                     },
+                     goal3: {
+                         minute: "80'",
+                         player: "Youssef En-Nesyri",
+                         assist: "Achraf Hakimi",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
@@ -1179,13 +1191,6 @@ let days = {
                 flag: "Flag-Tanzania.webp",
                 score: 0,
                 goals: {
-                     
-                    // goal4: {
-                    //     minute: "02'",
-                    //     player: "bokayo saka",
-                    //     assist: "odegard",
-                    //     penalty: false
-                    // },
                 },
             },
             group: "Group F",
