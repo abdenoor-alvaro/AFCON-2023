@@ -1164,7 +1164,7 @@ let days = {
             teamOne: {
                 name: "morocco",
                 flag: "ma.png",
-                score: 1,
+                score: 3,
                 goals: {
                     goals1:{
                          minute: "30'",
@@ -1204,15 +1204,39 @@ let days = {
             teamOne: {
                 name: "dr congo",
                 flag: "Flag-Democratic-Republic-of-the-Congo.webp",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "27'",
+                         player: "Yoane Wissa",
+                         assist:"Cedric Bakambu",
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             teamTwo: {
                 name: "zambia",
                 flag: "download.jpg",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "23'",
+                         player: "Kings Kangwa",
+                         assist:"Patson Daka",
+                         penalty: false 
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             group: "Group F",
