@@ -1127,14 +1127,26 @@ let days = {
             teamOne: {
                 name: "mali",
                 flag: "download.png",
-                score: false,
+                score: 2,
                 goals: {
+                     goal1: {
+                         minute: "60'",
+                         player: "Hamari Traore",
+                         assist:false,
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "66'",
+                         player: "Lassine Sinayoko",
+                         assist: "Kamory Doumbia",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "south africa",
                 flag: "Flag_of_South_Africa.svg.png",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
