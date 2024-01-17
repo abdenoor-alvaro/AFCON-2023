@@ -1164,21 +1164,22 @@ let days = {
             teamOne: {
                 name: "morocco",
                 flag: "ma.png",
-                score: 0,
+                score: 1,
                 goals: {
+                   
+                         minute: "30'",
+                         player: "Romain Saiss",
+                         assist:false,
+                         penalty: false
+                     }, 
                 },
             },
             teamTwo: {
                 name: "tanzania",
                 flag: "Flag-Tanzania.webp",
-                score: 1,
+                score: 0,
                 goals: {
-                     goal1: {
-                         minute: "30'",
-                         player: "Romain Saiss",
-                         assist:false,
-                         penalty: false
-                     },
+                     
                     // goal4: {
                     //     minute: "02'",
                     //     player: "bokayo saka",
