@@ -1311,14 +1311,26 @@ let days = {
             teamOne: {
                 name: "nigeria",
                 flag: "nigeria-flag__68388.1639690373.1280.1280.webp",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "55'",
+                         player: "William Troost-Ekong",
+                         assist:false,
+                         penalty: "(P)"
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             teamTwo: {
                 name: "ivory coast",
                 flag: "Flag-Cote-dIvoire.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
