@@ -1294,28 +1294,7 @@ let days = {
             stadium: "Alassane Ouattara Stadium",
             highlight: "#"
         },
-        game3: {
-            teamOne: {
-                name: "cameroon",
-                flag: "download (1).png",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "senegal",
-                flag: "Flag-Senegal.webp",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group C",
-            time: "17:00 GMT",
-            match: "15",
-            city: "Yamoussoukro",
-            stadium: "Charles Konan Banny Stadium",
-            highlight: "#"
-        },
+        
         game4: {
             teamOne: {
                 name: "egypt",
@@ -1336,28 +1315,6 @@ let days = {
             match: "16",
             city: "Abidjan",
             stadium: "Houphouët-Boigny Stadium",
-            highlight: "#"
-        },
-        game5: {
-            teamOne: {
-                name: "gambia",
-                flag: "Flag-of-The-Gambia.webp",
-                score: false,
-                goals: {
-                },
-            },
-            teamTwo: {
-                name: "guinea",
-                flag: "Flag-Guinea.webp",
-                score: false,
-                goals: {
-                },
-            },
-            group: "Group C",
-            time: "20:00 GMT",
-            match: "17",
-            city: "Yamoussoukro",
-            stadium: "Charles Konan Banny Stadium",
             highlight: "#"
         },
         
@@ -1387,6 +1344,51 @@ let days = {
             stadium: "Houphouët-Boigny Stadium",
             highlight: "#"
         },
+        game3: {
+            teamOne: {
+                name: "cameroon",
+                flag: "download (1).png",
+                score: false,
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "senegal",
+                flag: "Flag-Senegal.webp",
+                score: false,
+                goals: {
+                },
+            },
+            group: "Group C",
+            time: "17:00 GMT",
+            match: "15",
+            city: "Yamoussoukro",
+            stadium: "Charles Konan Banny Stadium",
+            highlight: "#"
+        },
+        game5: {
+            teamOne: {
+                name: "gambia",
+                flag: "Flag-of-The-Gambia.webp",
+                score: false,
+                goals: {
+                },
+            },
+            teamTwo: {
+                name: "guinea",
+                flag: "Flag-Guinea.webp",
+                score: false,
+                goals: {
+                },
+            },
+            group: "Group C",
+            time: "20:00 GMT",
+            match: "17",
+            city: "Yamoussoukro",
+            stadium: "Charles Konan Banny Stadium",
+            highlight: "#"
+        },
+        
     },
     day8: {
         date: "Saturday 20 January 2024",
