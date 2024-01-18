@@ -1253,16 +1253,51 @@ let days = {
             teamOne: {
                 name: "equatorial guinea",
                 flag: "Flag-Equatorial-Guinea.webp",
-                score: false,
+                score: 4,
                 goals: {
-                    
-                }
+                    goal1: {
+                         minute: "21'",
+                         player: "Emilio Nsue",
+                         assist:"Pablo Ganet",
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "46'",
+                         player: "Josete Miranda",
+                         assist: "Jesus Owono",
+                         penalty: false
+                     },
+                     goal3: {
+                         minute: "51'",
+                         player: "Emilio Nsue",
+                         assist:"Basilio Ndong",
+                         penalty: false
+                     },
+                     goal4: {
+                         minute: "61'",
+                         player: "Emilio Nsue",
+                         assist: "Jose Machin",
+                         penalty: false
+                     }, 
+                },
             },
             teamTwo: {
                 name: "guinea-bissau",
                 flag: "istockphoto-1457742800-612x612.jpg",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "37'",
+                         player: "Esteban Orozco",
+                         assist:"Own goal",
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             group: "Group A",
