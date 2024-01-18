@@ -1284,7 +1284,7 @@ let days = {
             teamTwo: {
                 name: "guinea-bissau",
                 flag: "istockphoto-1457742800-612x612.jpg",
-                score: 1,
+                score: 2,
                 goals: {
                      goal1: {
                          minute: "37'",
@@ -1292,12 +1292,12 @@ let days = {
                          assist:"Own goal",
                          penalty: false
                      },
-                    // goal4: {
-                    //     minute: "02'",
-                    //     player: "bokayo saka",
-                    //     assist: "odegard",
-                    //     penalty: false
-                    // },
+                     goal2: {
+                         minute: "90'+3",
+                         player: "Ze Turbo",
+                         assist: "Dalcio Gomes",
+                         penalty: false
+                     },
                 },
             },
             group: "Group A",
