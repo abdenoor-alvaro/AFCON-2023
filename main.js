@@ -1462,7 +1462,7 @@ let days = {
             teamTwo: {
                 name: "senegal",
                 flag: "Flag-Senegal.webp",
-                score: false,
+                score: 3,
                 goals: {
                      goal1: {
                          minute: "17'",
