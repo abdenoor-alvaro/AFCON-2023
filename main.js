@@ -1439,12 +1439,24 @@ let days = {
             stadium: "Houphouët-Boigny Stadium",
             highlight: "#"
         },
-        game3: {
+        game2: {
             teamOne: {
                 name: "cameroon",
                 flag: "download (1).png",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "83'",
+                         player: "Jean-Charles Castelletto",
+                         assist:"Olivier Ntcham",
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             teamTwo: {
@@ -1452,6 +1464,30 @@ let days = {
                 flag: "Flag-Senegal.webp",
                 score: false,
                 goals: {
+                     goal1: {
+                         minute: "17'",
+                         player: "Ismaila Sarr",
+                         assist:"Pape Sarr",
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "71'",
+                         player: "Habibou Mouhamadou Diallo",
+                         assist: "Ismaila Sarr",
+                         penalty: false
+                     },
+                     goal3: {
+                         minute:"90'+5",
+                         player: "Sadio Mane",
+                         assist:"Idrissa Gana Gueye",
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             group: "Group C",
@@ -1461,7 +1497,7 @@ let days = {
             stadium: "Charles Konan Banny Stadium",
             highlight: "#"
         },
-        game5: {
+        game3: {
             teamOne: {
                 name: "gambia",
                 flag: "Flag-of-The-Gambia.webp",
