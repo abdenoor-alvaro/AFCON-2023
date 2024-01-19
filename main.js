@@ -1346,15 +1346,39 @@ let days = {
             teamOne: {
                 name: "egypt",
                 flag: "553_1600x.webp",
-                score: false,
+                score: 2,
                 goals: {
+                     goal1: {
+                         minute: "69'",
+                         player: "Omar Marmoush",
+                         assist:false,
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "74'",
+                         player: "Mostafa Mohamed",
+                         assist: " Mohamed Trezeguet",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "ghana",
                 flag: "Flag-Ghana.webp",
-                score: false,
+                score: 2,
                 goals: {
+                     goal1: {
+                         minute: "45'",
+                         player: "Mohamed Kudus",
+                         assist:"Salis Abdul Samed",
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "70'",
+                         player: "Mohamed Kudus",
+                         assist: "Denis Odoi",
+                         penalty: false
+                     },
                 },
             },
             group: "Group B",
