@@ -1396,7 +1396,7 @@ let days = {
             teamOne: {
                 name: "mozambique",
                 flag: "Flag-Mozambique.webp",
-                score: false,
+                score: 0,
                 goals: {
                     
                 }
@@ -1404,8 +1404,32 @@ let days = {
             teamTwo: {
                 name: "cape verde",
                 flag: "Flag-of-Cape-Verde-01.png",
-                score: false,
+                score: 3,
                 goals: {
+                     goal1: {
+                         minute: "32'",
+                         player: "Bebe",
+                         assist:false,
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "51'",
+                         player: "Ryan Mendes",
+                         assist: false,
+                         penalty: false
+                    },
+                     goal3: {
+                         minute: "69'",
+                         player: "Kevin Lenini",
+                         assist:"Deroy Duarte",
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             group: "Group B",
