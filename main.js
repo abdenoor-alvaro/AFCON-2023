@@ -913,7 +913,7 @@ let days = {
             match: "04",
             city: "Abidjan",
             stadium: "Houphouët-Boigny Stadium",
-            highlight: "#"
+            highlight: "5y7RFKkfTdE?si=_fXgErH4LLTT8Res"
         },
     },
     day3: {
@@ -963,7 +963,7 @@ let days = {
             match: "05",
             city: "Yamoussoukro",
             stadium: "Charles Konan Banny Stadium",
-            highlight: "#"
+            highlight: "ncTf16XuerI?si=eIHCM1QVomb54r5P"
         },
         game2: {
             teamOne: {
@@ -1009,7 +1009,7 @@ let days = {
             match: "06",
             city: "Yamoussoukro",
             stadium: "Charles Konan Banny Stadium",
-            highlight: "#"
+            highlight: "xjv1_wN492Y?si=jkXsRjvhr7h8NQ49"
         },
         game4: {
             teamOne: {
@@ -1049,7 +1049,7 @@ let days = {
             match: "07",
             city: "Bouaké",
             stadium: "Stade de Paix",
-            highlight: "#"
+            highlight: "LLTqWwPFSqc?si=GlvVCSXCVyenFJYg"
         },
         
     },
@@ -1087,7 +1087,7 @@ let days = {
             match: "08",
             city: "Bouaké",
             stadium: "Stade de Paix",
-            highlight: "#"
+            highlight: "L21NxvN_tI0?si=Sk0XWLB31X8LkRCT"
         },
         game2: {
             teamOne: {
@@ -1121,7 +1121,7 @@ let days = {
             match: "09",
             city: "Korhogo",
             stadium: "Amadou Gon Coulibaly Stadium",
-            highlight: "#"
+            highlight: "07iYScoHvtQ?si=HJRnW69f5Ag3Pi5X"
         },
         game3: {
             teamOne: {
@@ -1155,7 +1155,7 @@ let days = {
             match: "10",
             city: "Korhogo",
             stadium: "Amadou Gon Coulibaly Stadium",
-            highlight: "#"
+            highlight: "35WBkPG6z7U?si=7DoI_USg2ZGUaXoo"
         },
     },
     day5: {
@@ -1198,7 +1198,7 @@ let days = {
             match: "11",
             city: "San Pedro",
             stadium: "Laurent Pokou Stadium",
-            highlight: "#"
+            highlight: "CYzCUXDrD6c?si=0XKy7dsvGEoisS9Z"
         },
         game2: {
             teamOne: {
@@ -1244,7 +1244,7 @@ let days = {
             match: "12",
             city: "San Pedro",
             stadium: "Laurent Pokou Stadium",
-            highlight: "#"
+            highlight: "iN29D8C-t78?si=bAZuwr_fvsBiZIWc"
         }
     },
     day6: {
@@ -1305,7 +1305,7 @@ let days = {
             match: "13",
             city: "Abidjan",
             stadium: "Alassane Ouattara Stadium",
-            highlight: "#"
+            highlight: "tXGIyC4W5gA?si=MRvQw--KH6SOGO0v"
         },
         game2: {
             teamOne: {
@@ -1339,7 +1339,7 @@ let days = {
             match: "14",
             city: "Abidjan",
             stadium: "Alassane Ouattara Stadium",
-            highlight: "#"
+            highlight: "KaOO0somVe4?si=S3XlTEW8TWGCvwKE"
         },
         
         game4: {
@@ -1386,7 +1386,7 @@ let days = {
             match: "16",
             city: "Abidjan",
             stadium: "Houphouët-Boigny Stadium",
-            highlight: "#"
+            highlight: "CUdQIT_Bj1s?si=oE5-xgdAn3qHPnfU"
         },
         
     },
