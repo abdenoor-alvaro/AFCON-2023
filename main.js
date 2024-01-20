@@ -1539,15 +1539,39 @@ let days = {
             teamOne: {
                 name: "burkina faso",
                 flag: "Flag-Burkina-Faso.webp",
-                score: false,
+                score: 2,
                 goals: {
+                     goal1: {
+                         minute: "45'+3",
+                         player: "Mohamed Konate",
+                         assist:"Abdoul Fessal Tapsoba",
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "71'",
+                         player: "Bertrand Traore",
+                         assist: false,
+                         penalty: "(p)"
+                     },
                 },
             },
             teamTwo: {
                 name: "algeria",
                 flag: "Flag_of_Algeria.svg",
-                score: false,
+                score: 2,
                 goals: {
+                     goal1: {
+                         minute: "51'",
+                         player: "Baghdad Bounedjah",
+                         assist:false,
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "90'+5",
+                         player: "Baghdad Bounedjah",
+                         assist: "Adam Ounas",
+                         penalty: false
+                     },
                 },
             },
             group: "Group D",
