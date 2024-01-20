@@ -1585,15 +1585,46 @@ let days = {
             teamOne: {
                 name: "mauritania",
                 flag: "Flag-Mauritania.webp",
-                score: false,
+                score: 2,
                 goals: {
+                     goal1: {
+                         minute: "43'",
+                         player: "Sidi Amar",
+                         assist:"Omare Gassama",
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "58'",
+                         player: "Aboubakary Koita",
+                         assist: "Khadim Diaw",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "angola",
                 flag: "Flag-Angola.webp",
-                score: false,
+                score: 3,
                 goals: {
+                     goal1: {
+                         minute: "30'",
+                         player: "Dala Gelson",
+                         assist:false,
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "50'",
+                         player: "Dala Gelson",
+                         assist: false,
+                         penalty: false
+                     },
+                     goal3: {
+                         minute: "53'",
+                         player: "Gilberto",
+                         assist:false,
+                         penalty: false
+                     },
+                
                 },
             },
             group: "Group D",
