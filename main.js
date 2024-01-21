@@ -1707,7 +1707,7 @@ let days = {
                          player: "Silas Katompa Mvumpa",
                          assist:"Meschack Elia",
                          penalty: false
-                     },,
+                     },
                 },
             },
             group: "Group F",
