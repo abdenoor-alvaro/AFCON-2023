@@ -1638,15 +1638,39 @@ let days = {
             teamOne: {
                 name: "mali",
                 flag: "download.png",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "10'",
+                         player: "Lassine Sinayoko",
+                         assist:"Kamory Doumbia",
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             teamTwo: {
                 name: "tunisia",
                 flag: "1024px-Flag_of_Tunisia.png",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "20'",
+                         player: "Hamza Rafia",
+                         assist:"Ali Abdi",
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             group: "Group E",
