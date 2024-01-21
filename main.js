@@ -1687,15 +1687,27 @@ let days = {
             teamOne: {
                 name: "morocco",
                 flag: "ma.png",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "6'",
+                         player: "Achraf Hakimi",
+                         assist:"Hakim Ziyech",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "dr congo",
                 flag: "Flag-Democratic-Republic-of-the-Congo.webp",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "76'",
+                         player: "Silas Katompa Mvumpa",
+                         assist:"Meschack Elia",
+                         penalty: false
+                     },,
                 },
             },
             group: "Group F",
@@ -1709,15 +1721,27 @@ let days = {
             teamOne: {
                 name: "tanzania",
                 flag: "Flag-Tanzania.webp",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "11'",
+                         player: "Simon Msuva",
+                         assist:"Mbwana Samatta",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "zambia",
                 flag: "download.jpg",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "88'",
+                         player: "Patson Daka",
+                         assist:"Clatous Chama",
+                         penalty: false
+                     },
                 },
             },
             group: "Group F",
