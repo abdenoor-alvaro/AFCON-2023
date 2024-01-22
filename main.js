@@ -2155,8 +2155,8 @@ let days = {
         date: "Monday 29 January 2024",
         game1: {
             teamOne: {
-                name: "1B",
-                flag: "empty.png",
+                name: "cape verde",
+                flag: "Flag-of-Cape-Verde-01.png",
                 score: false,
                 goals: {
                     
