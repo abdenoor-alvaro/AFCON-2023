@@ -1755,15 +1755,39 @@ let days = {
             teamOne: {
                 name: "namibia",
                 flag: "Flag-Namibia.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
             teamTwo: {
                 name: "south africa",
                 flag: "Flag_of_South_Africa.svg.png",
-                score: false,
+                score: 4,
                 goals: {
+                     goal1: {
+                         minute: "14'",
+                         player: "Percy Tau",
+                         assist:false,
+                         penalty: "(P)"
+                     },
+                     goal2: {
+                         minute: "25'",
+                         player: "Themba Zwane",
+                         assist: "Thapelo Morena",
+                         penalty: false
+                     },
+                     goal3: {
+                         minute: "40'",
+                         player: "Themba Zwane",
+                         assist:"Evidence Makgopa",
+                         penalty: false
+                     },
+                     goal4: {
+                         minute: "75'",
+                         player: "Thapelo Maseko",
+                         assist: "Teboho Mokoena",
+                         penalty: false
+                     },
                 },
             },
             group: "Group E",
