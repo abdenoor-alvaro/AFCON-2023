@@ -2231,8 +2231,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "2C",
-                flag: "empty.png",
+                name: "cameroon",
+                flag: "download (1).png",
                 score: false,
                 goals: {
                     
@@ -2325,8 +2325,8 @@ let days = {
         },
         game2: {
             teamOne: {
-                name: "1C",
-                flag: "empty.png",
+                name: "senegal",
+                flag: "Flag-Senegal.webp",
                 score: false,
                 goals: {
                     
