@@ -2178,8 +2178,8 @@ let days = {
         },
         game2: {
             teamOne: {
-                name: "2A",
-                flag: "empty.png",
+                name: "nigeria",
+                flag: "nigeria-flag__68388.1639690373.1280.1280.webp",
                 score: false,
                 goals: {
                     
@@ -2205,8 +2205,8 @@ let days = {
         date: "Sunday 28 January 2024",
         game1: {
             teamOne: {
-                name: "1A",
-                flag: "empty.png",
+                name: "equatorial guinea",
+                flag: "Flag-Equatorial-Guinea.webp",
                 score: false,
                 goals: {
                     
@@ -2237,8 +2237,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "2B",
-                flag: "empty.png",
+                name: "egypt",
+                flag: "553_1600x.webp",
                 score: false,
                 goals: {
                     
