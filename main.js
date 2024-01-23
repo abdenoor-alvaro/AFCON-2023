@@ -1804,15 +1804,39 @@ let days = {
             teamOne: {
                 name: "equatorial guinea",
                 flag: "Flag-Equatorial-Guinea.webp",
-                score: false,
+                score: 4,
                 goals: {
+                    goal1: {
+                         minute: "42'",
+                         player: "Emilio Nsue",
+                         assist:"Carlos Akapo",
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "73'",
+                         player: "Pablo Ganet",
+                         assist: false,
+                         penalty: false
+                     },
+                     goal3: {
+                         minute: "75'",
+                         player: "Emilio Nsue",
+                         assist:"Jose Machin",
+                         penalty: false
+                     },
+                     goal4: {
+                         minute: "88'",
+                         player: "Jannick Buyla Sam",
+                         assist: false,
+                         penalty: false
+                     },
                     
                 }
             },
             teamTwo: {
                 name: "ivory coast",
                 flag: "Flag-Cote-dIvoire.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
@@ -1827,14 +1851,20 @@ let days = {
             teamOne: {
                 name: "nigeria",
                 flag: "nigeria-flag__68388.1639690373.1280.1280.webp",
-                score: false,
+                score: 1,
                 goals: {
+                    goal1: {
+                         minute: "36'",
+                         player: "Opa Sangante",
+                         assist:"Own goal",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "guinea-bissau",
                 flag: "istockphoto-1457742800-612x612.jpg",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
@@ -1849,15 +1879,39 @@ let days = {
             teamOne: {
                 name: "egypt",
                 flag: "553_1600x.webp",
-                score: false,
+                score: 2,
                 goals: {
+                     goal1: {
+                         minute: "50",
+                         player: "Trezeguet",
+                         assist:"Ahmed Hegazy",
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "90'+3",
+                         player: "Mostafa Mohamed",
+                         assist: "Trezeguet",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "cape verde",
                 flag: "Flag-of-Cape-Verde-01.png",
-                score: false,
+                score: 2,
                 goals: {
+                    goal1: {
+                         minute: "45'+1",
+                         player: "Gilson Tavares",
+                         assist:"Ryan Mendes",
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "90'+9",
+                         player: "Bryan Teixeira",
+                         assist: false,
+                         penalty: false
+                     },
                 },
             },
             group: "Group B",
@@ -1871,16 +1925,39 @@ let days = {
             teamOne: {
                 name: "mozambique",
                 flag: "Flag-Mozambique.webp",
-                score: false,
+                score: 2,
                 goals: {
-                    
+                   goal1: {
+                         minute: "90'+1",
+                         player: "Geny Catamo",
+                         assist:"false",
+                         penalty: "(p)"
+                     },
+                     goal2: {
+                         minute: "90'+4",
+                         player: "Reinildo",
+                         assist: "Shaquille",
+                         penalty: false
+                       
                 }
             },
             teamTwo: {
                 name: "ghana",
                 flag: "Flag-Ghana.webp",
-                score: false,
+                score: 2,
                 goals: {
+                    goal1: {
+                         minute: "15'",
+                         player: "Jordan Ayew",
+                         assist:false,
+                         penalty: "(p)"
+                     },
+                     goal2: {
+                         minute: "70'",
+                         player: "Jordan Ayew",
+                         assist: false,
+                         penalty: "(p)"
+                     },
                 },
             },
             group: "Group B",
