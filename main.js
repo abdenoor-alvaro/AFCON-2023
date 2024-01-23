@@ -1831,7 +1831,7 @@ let days = {
                          penalty: false
                      },
                     
-                }
+                },
             },
             teamTwo: {
                 name: "ivory coast",
@@ -1938,8 +1938,8 @@ let days = {
                          player: "Reinildo",
                          assist: "Shaquille",
                          penalty: false
-                       
-                }
+                     },  
+                },
             },
             teamTwo: {
                 name: "ghana",
