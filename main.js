@@ -1974,15 +1974,28 @@ let days = {
             teamOne: {
                 name: "guinea",
                 flag: "Flag-Guinea.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
             teamTwo: {
                 name: "senegal",
                 flag: "Flag-Senegal.webp",
-                score: false,
+                score: 2,
                 goals: {
+                    goal1: {
+                         minute: "61'",
+                         player: "Abdoulaye Seck",
+                         assist:"Krepin Diatta",
+                         penalty: false
+                     },
+
+                     goal2: {
+                         minute: "90'",
+                         player: "Iliman Ndiaye",
+                         assist: "Sadio Mane",
+                         penalty: false
+                     },
                 },
             },
             group: "Group C",
@@ -1996,15 +2009,47 @@ let days = {
             teamOne: {
                 name: "gambia",
                 flag: "Flag-of-The-Gambia.webp",
-                score: false,
+                score: 2,
                 goals: {
+                     goal1: {
+                         minute: "72'",
+                         player: "Ablie Jallow",
+                         assist:"Alieu Fadera",
+                         penalty: false
+                     },
+                     goal2: {
+                         minute: "85'",
+                         player: "Ebrima Colley",
+                         assist: "Assan Ceesay",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "cameroon",
                 flag: "download (1).png",
-                score: false,
+                score: 3,
                 goals: {
+                    goal1: {
+                         minute: "56'",
+                         player: "Karl Toko Ekambi",
+                         assist:"Georges-Kevin N'Koudou",
+                         penalty: false
+                     },
+
+                     goal2: {
+                         minute: "88'",
+                         player: "James Gomez",
+                         assist: "Own goal",
+                         penalty: false
+                     },
+
+                     goal3: {
+                         minute: "90'+1",
+                         player: "Christopher Wooh",
+                         assist:"Georges-Kevin N'Koudou",
+                         penalty: false
+                     },
                 },
             },
             group: "Group C",
