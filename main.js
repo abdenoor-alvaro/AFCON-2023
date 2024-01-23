@@ -2063,15 +2063,28 @@ let days = {
             teamOne: {
                 name: "burkina faso",
                 flag: "Flag-Burkina-Faso.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
             teamTwo: {
                 name: "angola",
                 flag: "Flag-Angola.webp",
-                score: false,
+                score: 2,
                 goals: {
+                       goal1: {
+                         minute: "36'",
+                         player: "Mabululu",
+                         assist:"Fredy",
+                         penalty: false
+                     },
+
+                     goal2: {
+                         minute: "90'+2",
+                         player: "Zini",
+                         assist: false,
+                         penalty: false
+                     },
                 },
             },
             group: "Group D",
@@ -2085,14 +2098,20 @@ let days = {
             teamOne: {
                 name: "mauritania",
                 flag: "Flag-Mauritania.webp",
-                score: false,
+                score: 1,
                 goals: {
+                    goal1: {
+                         minute: "37'",
+                         player: "Yali Dellahi",
+                         assist:false,
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "algeria",
                 flag: "Flag_of_Algeria.svg",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
@@ -2199,8 +2218,8 @@ let days = {
         date: "Saturday 27 January 2024",
         game1: {
             teamOne: {
-                name: "1D",
-                flag: "empty.png",
+                name: "angola",
+                flag: "Flag-Angola.webp",
                 score: false,
                 goals: {
                     
@@ -2360,8 +2379,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "2D",
-                flag: "empty.png",
+                name: "burkina faso",
+                flag: "Flag-Burkina-Faso.webp",
                 score: false,
                 goals: {
                     
