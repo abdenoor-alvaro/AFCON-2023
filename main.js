@@ -2129,14 +2129,14 @@ let days = {
             teamOne: {
                 name: "mali",
                 flag: "download.png",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
             teamTwo: {
                 name: "namibia",
                 flag: "Flag-Namibia.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
@@ -2151,14 +2151,14 @@ let days = {
             teamOne: {
                 name: "tunisia",
                 flag: "1024px-Flag_of_Tunisia.png",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
             teamTwo: {
                 name: "south africa",
                 flag: "Flag_of_South_Africa.svg.png",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
@@ -2371,8 +2371,8 @@ let days = {
         date: "Tuesday 30 January 2024",
         game1: {
             teamOne: {
-                name: "1E",
-                flag: "empty.png",
+                name: "mali",
+                flag: "download.png",
                 score: false,
                 goals: {
                     
@@ -2403,8 +2403,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "2E",
-                flag: "empty.png",
+                name: "south africa",
+                flag: "Flag_of_South_Africa.svg.png",
                 score: false,
                 goals: {
                     
