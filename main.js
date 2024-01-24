@@ -2226,8 +2226,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "3/BEF",
-                flag: "empty.png",
+                name: "namibia",
+                flag: "Flag-Namibia.webp",
                 score: false,
                 goals: {
                     
@@ -2277,8 +2277,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "3/CDE",
-                flag: "empty.png",
+                name: "guinea",
+                flag: "Flag-Guinea.webp",
                 score: false,
                 goals: {
                     
@@ -2328,8 +2328,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "3/ACD",
-                flag: "empty.png",
+                name: "mauritania",
+                flag: "Flag-Mauritania.webp",
                 score: false,
                 goals: {
                     
