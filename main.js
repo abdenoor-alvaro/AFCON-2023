@@ -2173,14 +2173,14 @@ let days = {
             teamOne: {
                 name: "tanzania",
                 flag: "Flag-Tanzania.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
             teamTwo: {
                 name: "dr congo",
                 flag: "Flag-Democratic-Republic-of-the-Congo.webp",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
@@ -2195,14 +2195,26 @@ let days = {
             teamOne: {
                 name: "morocco",
                 flag: "ma.png",
-                score: false,
+                score: 1,
                 goals: {
+                     goal1: {
+                         minute: "37'",
+                         player: "Hakim Ziyech",
+                         assist:false,
+                         penalty: false
+                     },
+                    // goal4: {
+                    //     minute: "02'",
+                    //     player: "bokayo saka",
+                    //     assist: "odegard",
+                    //     penalty: false
+                    // },
                 },
             },
             teamTwo: {
                 name: "zambia",
                 flag: "download.jpg",
-                score: false,
+                score: 0,
                 goals: {
                 },
             },
@@ -2293,8 +2305,8 @@ let days = {
         },
         game2: {
             teamOne: {
-                name: "2F",
-                flag: "empty.png",
+                name: "dr congo",
+                flag: "Flag-Democratic-Republic-of-the-Congo.webp",
                 score: false,
                 goals: {
                     
@@ -2352,8 +2364,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "3/ABF",
-                flag: "empty.png",
+                name: "ivory coast",
+                flag: "Flag-Cote-dIvoire.webp",
                 score: false,
                 goals: {
                     
@@ -2395,8 +2407,8 @@ let days = {
         },
         game2: {
             teamOne: {
-                name: "1F",
-                flag: "empty.png",
+                name: "morocco",
+                flag: "ma.png",
                 score: false,
                 goals: {
                     
