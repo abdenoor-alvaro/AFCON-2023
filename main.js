@@ -2232,15 +2232,35 @@ let days = {
             teamOne: {
                 name: "angola",
                 flag: "Flag-Angola.webp",
-                score: false,
+                score: 3,
                 goals: {
+                    goal1: {
+                         minute: "38'",
+                         player: "Dala Gelson",
+                         assist:"Fredy",
+                         penalty: false
+                     },
+
+                     goal2: {
+                         minute: "42'",
+                         player: "Dala Gelson",
+                         assist: "Fredy",
+                         penalty: false
+                     },
+
+                     goal3: {
+                         minute: "66'",
+                         player: "Mabululu",
+                         assist:"Dala Gelson",
+                         penalty: false
+                     },
                     
                 },
             },
             teamTwo: {
                 name: "namibia",
                 flag: "Flag-Namibia.webp",
-                score: false,
+                score: 0,
                 goals: {
                     
                 }
@@ -2434,8 +2454,8 @@ let days = {
         date: "Friday 02 February 2024",
         game1: {
             teamOne: {
-                name: "Winner 37",
-                flag: "empty.png",
+                name: "angola",
+                flag: "Flag-Angola.webp",
                 score: false,
                 goals: {
                     
