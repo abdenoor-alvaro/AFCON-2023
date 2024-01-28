@@ -2276,15 +2276,27 @@ let days = {
             teamOne: {
                 name: "nigeria",
                 flag: "nigeria-flag__68388.1639690373.1280.1280.webp",
-                score: false,
+                score: 2,
                 goals: {
-                    
+                    goal1: {
+                         minute: "36'",
+                         player: "Ademola Lookman",
+                         assist:"Victor Osimhen",
+                         penalty: false
+                     },
+
+                     goal2: {
+                         minute: "90'",
+                         player: "Ademola Lookman",
+                         assist: "Calvin Bassey",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "cameroon",
                 flag: "download (1).png",
-                score: false,
+                score: 0,
                 goals: {
                     
                 }
@@ -2462,8 +2474,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "Winner 38",
-                flag: "empty.png",
+                name: "nigeria",
+                flag: "nigeria-flag__68388.1639690373.1280.1280.webp",
                 score: false,
                 goals: {
                     
