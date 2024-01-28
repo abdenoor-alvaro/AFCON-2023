@@ -2315,7 +2315,7 @@ let days = {
             teamOne: {
                 name: "equatorial guinea",
                 flag: "Flag-Equatorial-Guinea.webp",
-                score: false,
+                score: 0,
                 goals: {
                     
                 },
@@ -2323,9 +2323,15 @@ let days = {
             teamTwo: {
                 name: "guinea",
                 flag: "Flag-Guinea.webp",
-                score: false,
+                score: 1,
                 goals: {
-                    
+                    goal1: {
+                         minute: "90'+8",
+                         player: "Mohamed Bayo",
+                         assist:"Ibrahim Diakite",
+                         penalty: false
+                     },
+
                 }
             },
             group: "Round Of 16",
@@ -2490,8 +2496,8 @@ let days = {
         },
         game2: {
             teamOne: {
-                name: "Winner 39",
-                flag: "empty.png",
+             name: "guinea",
+                flag: "Flag-Guinea.webp",
                 score: false,
                 goals: {
                     
