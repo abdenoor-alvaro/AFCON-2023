@@ -1,4 +1,4 @@
-
+ط
 
 let userTimezone = getUserTimezone();
 console.log(userTimezone);
@@ -2377,8 +2377,8 @@ let days = {
             highlight: "#",
             drawInfo: {
                 winnerTeam: "dr congo",
-                scoreOne: "10",
-                scoreTwo: "9"
+                scoreOne: "8",
+                scoreTwo: "7"
             },
         },
     },
@@ -2520,8 +2520,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "Winner 40",
-                flag: "empty.png",
+                name: "dr congo",
+                flag: "Flag-Democratic-Republic-of-the-Congo.webp",
                 score: false,
                 goals: {
                     
