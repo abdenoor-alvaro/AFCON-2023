@@ -2377,8 +2377,8 @@ let days = {
             highlight: "#",
             drawInfo: {
                 winnerTeam: "dr congo",
-                scoreOne: "8",
-                scoreTwo: "7",
+                scoreOne: "7",
+                scoreTwo: "8",
             },
         },
     },
