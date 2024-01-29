@@ -2345,25 +2345,41 @@ let days = {
             teamOne: {
                 name: "dr congo",
                 flag: "Flag-Democratic-Republic-of-the-Congo.webp",
-                score: false,
+                score: 1,
                 goals: {
-                    
+                         goal1: {
+                         minute: "37'",
+                         player: "Meschack Elia",
+                         assist: false,
+                         penalty: false
+                     },
                 },
+                Winner:true
             },
             teamTwo: {
                 name: "egypt",
                 flag: "553_1600x.webp",
-                score: false,
+                score: 1,
                 goals: {
-                    
-                }
+                     goal1: {
+                         minute: "45'+1",
+                         player: "Mostafa Mohamed",
+                         assist:false,
+                         penalty: "(p)"
+                     },
+                },
             },
             group: "Round Of 16",
             time: "20:00 GMT",
             match: "40",
             city: "San Pedro",
             stadium: "Laurent Pokou Stadium",
-            highlight: "#"
+            highlight: "#",
+            drawInfo: {
+                winnerTeam: "dr congo",
+                scoreOne: "10",
+                scoreTwo: "9"
+            },
         },
     },
     day15: {
