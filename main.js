@@ -1,4 +1,4 @@
-ط
+
 
 let userTimezone = getUserTimezone();
 console.log(userTimezone);
@@ -2378,7 +2378,7 @@ let days = {
             drawInfo: {
                 winnerTeam: "dr congo",
                 scoreOne: "8",
-                scoreTwo: "7"
+                scoreTwo: "7",
             },
         },
     },
@@ -2501,7 +2501,7 @@ let days = {
                 score: false,
                 goals: {
                     
-                }
+                },
             },
             group: "Quarter Final",
             time: "17:00 GMT",
@@ -2525,7 +2525,7 @@ let days = {
                 score: false,
                 goals: {
                     
-                }
+                },
             },
             group: "Quarter Final",
             time: "20:00 GMT",
