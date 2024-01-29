@@ -2388,15 +2388,20 @@ let days = {
             teamOne: {
                 name: "cape verde",
                 flag: "Flag-of-Cape-Verde-01.png",
-                score: false,
+                score: 1,
                 goals: {
-                    
+                           goal1: {
+                         minute: "88'",
+                         player: "Ryan Mendes",
+                         assist:false,
+                         penalty: "(p)"
+                     },
                 },
             },
             teamTwo: {
                 name: "mauritania",
                 flag: "Flag-Mauritania.webp",
-                score: false,
+                score: 0,
                 goals: {
                     
                 }
@@ -2563,8 +2568,8 @@ let days = {
         },
         game2: {
             teamOne: {
-                name: "Winner 41",
-                flag: "empty.png",
+                name: "cape verde",
+                flag: "Flag-of-Cape-Verde-01.png",
                 score: false,
                 goals: {
                     
