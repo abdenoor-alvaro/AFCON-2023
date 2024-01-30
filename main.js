@@ -2501,7 +2501,7 @@ let days = {
             teamOne: {
                 name: "morocco",
                 flag: "ma.png",
-                score: false,
+                score: 0,
                 goals: {
                     
                 },
@@ -2509,10 +2509,22 @@ let days = {
             teamTwo: {
                 name: "south africa",
                 flag: "Flag_of_South_Africa.svg.png",
-                score: false,
+                score: 2,
                 goals: {
-                    
-                }
+                     goal1: {
+                         minute: "57'",
+                         player: "Evidence Makgopa",
+                         assist:"Themba Zwane",
+                         penalty: false 
+                     },
+
+                     goal2: {
+                         minute: "90'+5",
+                         player: "Teboho Mokoena",
+                         assist: false,
+                         penalty: false
+                     },
+                },
             },
             group: "Round Of 16",
             time: "20:00 GMT",
@@ -2609,8 +2621,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "Winner 44",
-                flag: "empty.png",
+                name: "south africa",
+                flag: "Flag_of_South_Africa.svg.png",
                 score: false,
                 goals: {
                     
