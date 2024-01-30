@@ -2417,25 +2417,41 @@ let days = {
             teamOne: {
                 name: "senegal",
                 flag: "Flag-Senegal.webp",
-                score: false,
+                score: 1,
                 goals: {
-                    
+                         goal1: {
+                         minute: "4'",
+                         player: "Habibou Mouhamadou Diallo",
+                         assist: "Sadio Mane",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "ivory coast",
                 flag: "Flag-Cote-dIvoire.webp",
-                score: false,
+                score: 1,
                 goals: {
-                    
-                }
+                           goal1: {
+                         minute: "86'",
+                         player: "Franck Kessie",
+                         assist:false,
+                         penalty: "(p)"
+                           },
+                },
+                Winner:true
             },
             group: "Round Of 16",
             time: "20:00 GMT",
             match: "42",
             city: "Yamoussoukro",
             stadium: "Charles Konan Banny Stadium",
-            highlight: "#"
+            highlight: "#",
+            drawInfo: {
+                winnerTeam: "ivory coast",
+                scoreOne: "5",
+                scoreTwo: "4",
+            },
         },
     },
     day16: {
@@ -2544,8 +2560,8 @@ let days = {
         date: "Saturday 03 February 2024",
         game1: {
             teamOne: {
-                name: "Winner 42",
-                flag: "empty.png",
+                name: "ivory coast",
+                flag: "Flag-Cote-dIvoire.webp",
                 score: false,
                 goals: {
                     
