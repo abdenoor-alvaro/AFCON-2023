@@ -2460,18 +2460,35 @@ let days = {
             teamOne: {
                 name: "mali",
                 flag: "download.png",
-                score: false,
+                score: 2,
                 goals: {
-                    
+                    goal1: {
+                         minute: "3'",
+                         player: "Edmond Tapsoba",
+                         assist:"Own goal",
+                         penalty: false 
+                     },
+
+                     goal2: {
+                         minute: "47'",
+                         player: "Lassine Sinayoko",
+                         assist: "Hamari Traore",
+                         penalty: false
+                     },
                 },
             },
             teamTwo: {
                 name: "burkina faso",
                 flag: "Flag-Burkina-Faso.webp",
-                score: false,
+                score: 1,
                 goals: {
-                    
-                }
+                    goal1: {
+                         minute: "57'",
+                         player: "Bertrand Traore",
+                         assist:false,
+                         penalty: "(p)"
+                     },
+                },
             },
             group: "Round Of 16",
             time: "17:00 GMT",
@@ -2568,8 +2585,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "Winner 43",
-                flag: "empty.png",
+                name: "mali",
+                flag: "download.png",
                 score: false,
                 goals: {
                     
