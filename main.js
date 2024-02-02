@@ -2540,17 +2540,22 @@ let days = {
             teamOne: {
                 name: "angola",
                 flag: "Flag-Angola.webp",
-                score: false,
+                score: 0,
                 goals: {
-                    
+                     
                 },
             },
             teamTwo: {
                 name: "nigeria",
                 flag: "nigeria-flag__68388.1639690373.1280.1280.webp",
-                score: false,
+                score: 1,
                 goals: {
-                    
+                     goal1: {
+                         minute: "41'",
+                         player: "Ademola Lookman",
+                         assist:"Moses Simon",
+                         penalty: false 
+                     },
                 },
             },
             group: "Quarter Final",
@@ -2648,8 +2653,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "Winner 45",
-                flag: "empty.png",
+                name: "nigeria",
+                flag: "nigeria-flag__68388.1639690373.1280.1280.webp",
                 score: false,
                 goals: {
                     
