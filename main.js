@@ -2397,6 +2397,7 @@ let days = {
                          penalty: "(p)"
                      },
                 },
+                Winner:true
             },
             teamTwo: {
                 name: "mauritania",
@@ -2476,6 +2477,7 @@ let days = {
                          penalty: false
                      },
                 },
+                Winner:true
             },
             teamTwo: {
                 name: "burkina faso",
@@ -2525,6 +2527,7 @@ let days = {
                          penalty: false
                      },
                 },
+                Winner:true
             },
             group: "Round Of 16",
             time: "20:00 GMT",
@@ -2557,6 +2560,7 @@ let days = {
                          penalty: false 
                      },
                 },
+                Winner:true
             },
             group: "Quarter Final",
             time: "17:00 GMT",
@@ -2605,6 +2609,7 @@ let days = {
                          penalty: false
                      },
                 },
+                Winner:true
             },
             group: "Quarter Final",
             time: "20:00 GMT",
@@ -2620,18 +2625,36 @@ let days = {
             teamOne: {
                 name: "ivory coast",
                 flag: "Flag-Cote-dIvoire.webp",
-                score: false,
+                score: 2,
                 goals: {
-                    
+                        goal1: {
+                         minute: "90'",
+                         player: "Simon Adingra",
+                         assist: false,
+                         penalty: false
+                     },
+
+                     goal2: {
+                         minute: "120'+2",
+                         player: "Oumar Diakite",
+                         assist:"Seko Fofana",
+                         penalty: false
+                     },
                 },
+                Winner:true
             },
             teamTwo: {
                 name: "mali",
                 flag: "download.png",
-                score: false,
+                score: 1,
                 goals: {
-                    
-                }
+                     goal1: {
+                         minute: "71'",
+                         player: "Nene Dorgeles",
+                         assist:"Diadie Samassekou",
+                         penalty: false 
+                     },
+                },
             },
             group: "Quarter Final",
             time: "17:00 GMT",
@@ -2693,8 +2716,8 @@ let days = {
         },
         game2: {
             teamOne: {
-                name: "Winner 47",
-                flag: "empty.png",
+                name: "ivory coast",
+                flag: "Flag-Cote-dIvoire.webp",
                 score: false,
                 goals: {
                     
