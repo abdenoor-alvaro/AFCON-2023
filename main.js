@@ -2667,7 +2667,7 @@ let days = {
             teamOne: {
                 name: "cape verde",
                 flag: "Flag-of-Cape-Verde-01.png",
-                score: false,
+                score: 0,
                 goals: {
                     
                 },
@@ -2675,17 +2675,23 @@ let days = {
             teamTwo: {
                 name: "south africa",
                 flag: "Flag_of_South_Africa.svg.png",
-                score: false,
+                score: 0,
                 goals: {
                     
-                }
+                },
+                Winner:true
             },
             group: "Quarter Final",
             time: "20:00 GMT",
             match: "48",
             city: "Yamoussoukro",
             stadium: "Charles Konan Banny Stadium",
-            highlight: "#"
+            highlight: "#",
+            drawInfo: {
+                winnerTeam: "south africa",
+                scoreOne: "1",
+                scoreTwo: "2"
+            },
         },
     },
     day19: {
