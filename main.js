@@ -2569,17 +2569,41 @@ let days = {
             teamOne: {
              name: "guinea",
                 flag: "Flag-Guinea.webp",
-                score: false,
+                score: 1,
                 goals: {
-                    
+                    goal1: {
+                         minute: "21'",
+                         player: "Mohamed Bayo",
+                         assist: false,
+                         penalty: "(p)"
+                     },
                 },
             },
             teamTwo: {
                 name: "dr congo",
                 flag: "Flag-Democratic-Republic-of-the-Congo.webp",
-                score: false,
+                score: 3,
                 goals: {
-                    
+                    goal1: {
+                         minute: "27'",
+                         player: "Chancel Mbemba",
+                         assist:false,
+                         penalty: false 
+                     },
+
+                     goal2: {
+                         minute: "64'",
+                         player: "Yoane Wissa",
+                         assist: false,
+                         penalty: "(p)"
+                     },
+
+                     goal3: {
+                         minute: "82'",
+                         player: "Arthur Masuaku",
+                         assist:false,
+                         penalty: false
+                     },
                 },
             },
             group: "Quarter Final",
@@ -2677,8 +2701,8 @@ let days = {
                 },
             },
             teamTwo: {
-                name: "Winner 46",
-                flag: "empty.png",
+                name: "dr congo",
+                flag: "Flag-Democratic-Republic-of-the-Congo.webp",
                 score: false,
                 goals: {
                     
