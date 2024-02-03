@@ -3750,7 +3750,7 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
                     let game = Object.values(day[j + 1])
                     let teamOne = Object.values(game[0])
                     let teamTwo = Object.values(game[1])
-                    if (teamOne[0] === teamName && teamOne[2] !== false) {
+                    if ((teamOne[0] === teamName && teamOne[2] !== false) && (game[2].includes("Group"))) {
                         played += 1
                         let goalScored = parseInt(teamOne[2])
                         let goalConceded = parseInt(teamTwo[2])
@@ -3766,7 +3766,7 @@ if (currentPage.includes("group-stage.html") || currentPage.includes("index.html
                             draw += 1
                         }
                     }
-                    if (teamTwo[0] === teamName && teamTwo[2] !== false) {
+                    if ((teamTwo[0] === teamName && teamTwo[2] !== false) && (game[2].includes("Group")) ) {
                         played += 1
                         let goalScored = parseInt(teamTwo[2])
                         let goalConceded = parseInt(teamOne[2])
