@@ -3868,7 +3868,7 @@ function gameInfo(gameNumber, stage, final) {
             if (game[4] === gameNumber) {
                 let teamOneName = teamOne[0];
                 let teamTwoName = teamTwo[0];
-                let time = `<!-- -->`
+                let time = convertTime(game[3])
                 let penalties = `<!-- -->`
                 let score = `<div class="score">${teamOne[2]} - ${teamTwo[2]}</div>`
                 let flagTeamOne = ` `
@@ -3941,7 +3941,7 @@ function gameInfo(gameNumber, stage, final) {
                         // } else {
                         //     time = game[3]
                         // }
-                        
+                        time = ' '
                         score = `<div class="score">${dayNum}/${month}/${year}</div>`
                     }
                 }
@@ -3961,7 +3961,7 @@ function gameInfo(gameNumber, stage, final) {
                     flagTeamTwo =`style="border: 3px solid rgb(16, 30, 63);"`
                 } 
 
-                let list = [teamOneName, teamOne[1], teamTwoName, teamTwo[1], score, convertTime(game[3]), penalties, stage, final, flagTeamOne, flagTeamTwo, game[4], teamOne[0], teamTwo[0]]
+                let list = [teamOneName, teamOne[1], teamTwoName, teamTwo[1], score, time, penalties, stage, final, flagTeamOne, flagTeamTwo, game[4], teamOne[0], teamTwo[0]]
         
                 addKnockoutBox(...list)
             }
