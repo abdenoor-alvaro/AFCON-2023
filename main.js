@@ -3868,7 +3868,7 @@ function gameInfo(gameNumber, stage, final) {
             if (game[4] === gameNumber) {
                 let teamOneName = teamOne[0];
                 let teamTwoName = teamTwo[0];
-                let time = convertTime(game[3])
+                let time = ' '
                 let penalties = `<!-- -->`
                 let score = `<div class="score">${teamOne[2]} - ${teamTwo[2]}</div>`
                 let flagTeamOne = ` `
@@ -3941,7 +3941,7 @@ function gameInfo(gameNumber, stage, final) {
                         // } else {
                         //     time = game[3]
                         // }
-                        time = ' '
+                        time = convertTime(game[3])
                         score = `<div class="score">${dayNum}/${month}/${year}</div>`
                     }
                 }
