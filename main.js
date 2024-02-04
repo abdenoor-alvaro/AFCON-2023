@@ -2698,8 +2698,8 @@ let days = {
         date: "Wednesday 07 February 2024",
         game1: {
             teamOne: {
-                name: "Winner 48",
-                flag: "empty.png",
+                name: "south africa",
+                flag: "Flag_of_South_Africa.svg.png",
                 score: false,
                 goals: {
                     
