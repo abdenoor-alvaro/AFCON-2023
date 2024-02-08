@@ -2780,7 +2780,7 @@ let days = {
             },
             teamTwo: {
                 name: "dr congo",
-                flag: "Flag-Democratic-Republic-of-the-Congo.webp"
+                flag: "Flag-Democratic-Republic-of-the-Congo.webp",
                 score: false,
                 goals: {
                     
