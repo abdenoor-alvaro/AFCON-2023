@@ -2700,42 +2700,64 @@ let days = {
             teamOne: {
                 name: "south africa",
                 flag: "Flag_of_South_Africa.svg.png",
-                score: false,
+                score: 1,
                 goals: {
-                    
+                        goal1: {
+                         minute: "90'",
+                         player: "Teboho Mokoena",
+                         assist: false,
+                         penalty: "(p)"
+                     },
                 },
             },
             teamTwo: {
                 name: "nigeria",
                 flag: "nigeria-flag__68388.1639690373.1280.1280.webp",
-                score: false,
+                score: 1,
                 goals: {
-                    
-                }
+                    goal1: {
+                         minute: "67'",
+                         player: "William Troost-Ekong",
+                         assist:false,
+                         penalty: "(p)"
+                     },
+                },
+                Winner:true
             },
             group: "Semi Final",
             time: "17:00 GMT",
             match: "49",
             city: "Bouaké",
             stadium: "Stade de Paix",
-            highlight: "#"
+            highlight: "#",
+            drawInfo: {
+                winnerTeam: "nigeria",
+                scoreOne: "4",
+                scoreTwo: "2",
+            },
         },
         game2: {
             teamOne: {
                 name: "ivory coast",
                 flag: "Flag-Cote-dIvoire.webp",
-                score: false,
+                score: 1,
                 goals: {
-                    
+                       goal1: {
+                         minute: "65'",
+                         player: "Sebastien Haller",
+                         assist:"Max-Alain Gradel",
+                         penalty: false
+                     },
                 },
+                Winner:true
             },
             teamTwo: {
                 name: "dr congo",
                 flag: "Flag-Democratic-Republic-of-the-Congo.webp",
-                score: false,
+                score: 0,
                 goals: {
                     
-                }
+                },
             },
             group: "Semi Final",
             time: "20:00 GMT",
@@ -2749,16 +2771,16 @@ let days = {
         date: "Saturday 10 February 2024",
         game1: {
             teamOne: {
-                name: "Loser 50",
-                flag: "empty.png",
+                name: "south africa",
+                flag: "Flag_of_South_Africa.svg.png",
                 score: false,
                 goals: {
                     
                 },
             },
             teamTwo: {
-                name: "Loser 49",
-                flag: "empty.png",
+                name: "dr congo",
+                flag: "Flag-Democratic-Republic-of-the-Congo.webp"
                 score: false,
                 goals: {
                     
@@ -2776,16 +2798,17 @@ let days = {
         date: "Sunday 11 February 2024",
         game1: {
             teamOne: {
-                name: "Winner 50",
-                flag: "empty.png",
+                
+                name: "nigeria",
+                flag: "nigeria-flag__68388.1639690373.1280.1280.webp",
                 score: false,
                 goals: {
                     
                 },
             },
             teamTwo: {
-                name: "Winner 49",
-                flag: "empty.png",
+               name: "ivory coast",
+                flag: "Flag-Cote-dIvoire.webp",
                 score: false,
                 goals: {
                     
