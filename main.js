@@ -2773,25 +2773,31 @@ let days = {
             teamOne: {
                 name: "south africa",
                 flag: "Flag_of_South_Africa.svg.png",
-                score: false,
+                score: 0,
                 goals: {
                     
                 },
+                Winner:true
             },
             teamTwo: {
                 name: "dr congo",
                 flag: "Flag-Democratic-Republic-of-the-Congo.webp",
-                score: false,
+                score: 0,
                 goals: {
                     
-                }
+                },
             },
             group: "Third Place",
             time: "20:00 GMT",
             match: "51",
             city: "Abidjan",
             stadium: "Houphouët-Boigny Stadium",
-            highlight: "#"
+            highlight: "#",
+            drawInfo: {
+                winnerTeam: "south africa",
+                scoreOne: "4",
+                scoreTwo: "2"
+            },
         },
     },
     day22: {
@@ -2801,18 +2807,36 @@ let days = {
                 
                 name: "nigeria",
                 flag: "nigeria-flag__68388.1639690373.1280.1280.webp",
-                score: false,
+                score: 1,
                 goals: {
-                    
+                    goal1: {
+                         minute: "38'",
+                         player: "William Troost-Ekong",
+                         assist:false,
+                         penalty: false,
+                     },
                 },
             },
             teamTwo: {
                name: "ivory coast",
                 flag: "Flag-Cote-dIvoire.webp",
-                score: false,
+                score: 2,
                 goals: {
-                    
-                }
+                    goal1: {
+                         minute: "62'",
+                         player: "Franck Kessié",
+                         assist:"Simon Adinger",
+                         penalty: false,
+                     },
+
+                     goal2: {
+                         minute: "81'",
+                         player: "Sébastien Haller",
+                         assist: "Simon Adinger",
+                         penalty: false,
+                     },
+                },
+                Winner:true
             },
             group: "Final",
             time: "20:00 GMT",
